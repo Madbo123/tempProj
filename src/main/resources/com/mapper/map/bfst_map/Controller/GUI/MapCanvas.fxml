@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+
+
+<Canvas fx:id="mapCanvas" height="900.0" onMouseMoved="#infoOnHover" width="1600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mapper.map.bfst_map.Controller.GUI.CanvasController" />

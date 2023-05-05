@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mapper.map.bfst_map.Controller.GUI.MenuController">
+   <children>
+      <Button fx:id="loadButton1" layoutX="100.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#loadSmallOSM" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #666666;" text="small" />
+      <Button fx:id="loadButton2" layoutX="385.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#loadKbhOSM" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #666666;" text="kbh" />
+      <Button fx:id="loadButton3" layoutX="700.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#loadDenmarkOSM" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #666666;" text="denmark" />
+      <Button fx:id="loadButtonCustom" layoutX="380.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#loadCustomOSM" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #666666;" text="Load Custom File" />
+   </children>
+</AnchorPane>

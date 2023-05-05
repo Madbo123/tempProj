@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.8 (12847 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="55.6883300" minlon="12.3260200" maxlat="55.6894200" maxlon="12.3318600"/>
+ <node id="85585680" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6895337" lon="12.3272281"/>
+ <node id="85585682" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6893527" lon="12.3277858"/>
+ <node id="85585683" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6892279" lon="12.3279667"/>
+ <node id="85585685" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6888582" lon="12.3283419"/>
+ <node id="85585686" visible="true" version="7" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6886676" lon="12.3286259"/>
+ <node id="85585687" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6886314" lon="12.3287983"/>
+ <node id="85585688" visible="true" version="6" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6885962" lon="12.3290366"/>
+ <node id="85585690" visible="true" version="8" changeset="24715834" timestamp="2014-08-13T05:35:05Z" user="Hjart" uid="207581" lat="55.6885752" lon="12.3291279"/>
+ <node id="115149756" visible="true" version="6" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6871784" lon="12.3265354"/>
+ <node id="277858731" visible="true" version="2" changeset="25343083" timestamp="2014-09-10T07:51:28Z" user="Hjart" uid="207581" lat="55.6906035" lon="12.3264975"/>
+ <node id="277858734" visible="true" version="4" changeset="25751688" timestamp="2014-09-29T17:44:27Z" user="Hjart" uid="207581" lat="55.6907795" lon="12.3247623"/>
+ <node id="277858735" visible="true" version="3" changeset="25751688" timestamp="2014-09-29T17:44:27Z" user="Hjart" uid="207581" lat="55.6901707" lon="12.3246862"/>
+ <node id="277859308" visible="true" version="4" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6884825" lon="12.3241657"/>
+ <node id="277859309" visible="true" version="5" changeset="31969307" timestamp="2015-06-14T19:17:59Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6877066" lon="12.3244477"/>
+ <node id="277859317" visible="true" version="1" changeset="464564" timestamp="2008-07-12T08:13:59Z" user="HBP" uid="46359" lat="55.6874129" lon="12.3277332"/>
+ <node id="277859318" visible="true" version="3" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6877824" lon="12.3293558"/>
+ <node id="277859319" visible="true" version="1" changeset="464564" timestamp="2008-07-12T08:13:59Z" user="HBP" uid="46359" lat="55.6887338" lon="12.3290464"/>
+ <node id="277859320" visible="true" version="1" changeset="464564" timestamp="2008-07-12T08:13:59Z" user="HBP" uid="46359" lat="55.6894305" lon="12.3282739"/>
+ <node id="277859321" visible="true" version="2" changeset="24552347" timestamp="2014-08-05T10:10:30Z" user="Toftebo" uid="2234329" lat="55.6895800" lon="12.3285758"/>
+ <node id="277859322" visible="true" version="2" changeset="24552347" timestamp="2014-08-05T10:10:30Z" user="Toftebo" uid="2234329" lat="55.6902120" lon="12.3287529"/>
+ <node id="277859327" visible="true" version="3" changeset="25751688" timestamp="2014-09-29T17:44:27Z" user="Hjart" uid="207581" lat="55.6907652" lon="12.3253504"/>
+ <node id="277859330" visible="true" version="1" changeset="464564" timestamp="2008-07-12T08:13:59Z" user="HBP" uid="46359" lat="55.6900497" lon="12.3234846"/>
+ <node id="277859331" visible="true" version="3" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6897283" lon="12.3234469"/>
+ <node id="277859332" visible="true" version="3" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6897079" lon="12.3243776"/>
+ <node id="277859339" visible="true" version="3" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6885823" lon="12.3253432"/>
+ <node id="282543637" visible="true" version="3" changeset="12566320" timestamp="2012-07-31T19:52:21Z" user="Fod" uid="329844" lat="55.6908082" lon="12.3325337"/>
+ <node id="290004467" visible="true" version="4" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657" lat="55.6876315" lon="12.3298359"/>
+ <node id="290004468" visible="true" version="3" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6880186" lon="12.3329641"/>
+ <node id="292622910" visible="true" version="1" changeset="478095" timestamp="2008-08-31T17:04:27Z" user="HBP" uid="46359" lat="55.6884359" lon="12.3299164"/>
+ <node id="292622911" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6878940" lon="12.3300697"/>
+ <node id="292622913" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6879381" lon="12.3307878"/>
+ <node id="292622915" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6885412" lon="12.3305269"/>
+ <node id="292622961" visible="true" version="1" changeset="478095" timestamp="2008-08-31T17:04:36Z" user="HBP" uid="46359" lat="55.6884214" lon="12.3309636"/>
+ <node id="292622962" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6885267" lon="12.3314603"/>
+ <node id="292622963" visible="true" version="1" changeset="478095" timestamp="2008-08-31T17:04:36Z" user="HBP" uid="46359" lat="55.6879182" lon="12.3316331"/>
+ <node id="292622964" visible="true" version="1" changeset="478095" timestamp="2008-08-31T17:04:36Z" user="HBP" uid="46359" lat="55.6878553" lon="12.3311438"/>
+ <node id="292622967" visible="true" version="1" changeset="478095" timestamp="2008-08-31T17:04:43Z" user="HBP" uid="46359" lat="55.6887359" lon="12.3317017"/>
+ <node id="292622968" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6888726" lon="12.3325998"/>
+ <node id="292622969" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6883228" lon="12.3328037"/>
+ <node id="292622970" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:28Z" user="hotelsierra" uid="226150" lat="55.6881843" lon="12.3318326"/>
+ <node id="335868339" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6878127" lon="12.3256083"/>
+ <node id="335868340" visible="true" version="5" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6877895" lon="12.3258612"/>
+ <node id="335868359" visible="true" version="4" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6878266" lon="12.3266990"/>
+ <node id="335868361" visible="true" version="4" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6879418" lon="12.3270241"/>
+ <node id="335868362" visible="true" version="3" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6883864" lon="12.3281009"/>
+ <node id="340671525" visible="true" version="7" changeset="119893418" timestamp="2022-04-19T08:15:48Z" user="autoAWS" uid="8209541" lat="55.6883630" lon="12.3290290">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a496-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340671527" visible="true" version="7" changeset="119892711" timestamp="2022-04-19T07:54:53Z" user="autoAWS" uid="8209541" lat="55.6887210" lon="12.3283770">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a497-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340671530" visible="true" version="7" changeset="119893418" timestamp="2022-04-19T08:15:49Z" user="autoAWS" uid="8209541" lat="55.6887430" lon="12.3286990">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a49a-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340671532" visible="true" version="7" changeset="119892980" timestamp="2022-04-19T08:04:22Z" user="autoAWS" uid="8209541" lat="55.6892910" lon="12.3275540">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a49b-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340671533" visible="true" version="7" changeset="119888031" timestamp="2022-04-19T06:02:11Z" user="autoAWS" uid="8209541" lat="55.6890370" lon="12.3283080">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a49c-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340671535" visible="true" version="7" changeset="119893418" timestamp="2022-04-19T08:15:50Z" user="autoAWS" uid="8209541" lat="55.6892850" lon="12.3281220">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a49e-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673364" visible="true" version="7" changeset="119893619" timestamp="2022-04-19T08:19:40Z" user="autoAWS" uid="8209541" lat="55.6884370" lon="12.3284480">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Risbystræde"/>
+  <tag k="osak:identifier" v="0a3f507c-ab7c-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673365" visible="true" version="7" changeset="119890388" timestamp="2022-04-19T07:01:10Z" user="autoAWS" uid="8209541" lat="55.6886620" lon="12.3280280">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Risbystræde"/>
+  <tag k="osak:identifier" v="0a3f507c-ab7d-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673366" visible="true" version="7" changeset="119890388" timestamp="2022-04-19T07:01:11Z" user="autoAWS" uid="8209541" lat="55.6885880" lon="12.3278310">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Risbystræde"/>
+  <tag k="osak:identifier" v="0a3f507c-ab7e-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673368" visible="true" version="7" changeset="119891472" timestamp="2022-04-19T07:25:07Z" user="autoAWS" uid="8209541" lat="55.6884920" lon="12.3280330">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Risbystræde"/>
+  <tag k="osak:identifier" v="0a3f507c-ab80-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673370" visible="true" version="7" changeset="119891472" timestamp="2022-04-19T07:25:08Z" user="autoAWS" uid="8209541" lat="55.6885310" lon="12.3277210">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Risbystræde"/>
+  <tag k="osak:identifier" v="0a3f507c-ab82-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="340673385" visible="true" version="12" changeset="119891472" timestamp="2022-04-19T07:25:13Z" user="autoAWS" uid="8209541" lat="55.6890620" lon="12.3302190">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Østbakkevej"/>
+  <tag k="osak:identifier" v="0a3f507c-ab91-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="1388170001" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:01Z" user="Hjart" uid="207581" lat="55.6882099" lon="12.3275212"/>
+ <node id="1644513303" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:02Z" user="Hjart" uid="207581" lat="55.6877909" lon="12.3264695"/>
+ <node id="1644513380" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:56Z" user="hotelsierra" uid="226150" lat="55.6879613" lon="12.3277279"/>
+ <node id="1644513382" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:56Z" user="hotelsierra" uid="226150" lat="55.6879839" lon="12.3278288"/>
+ <node id="1644513401" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:56Z" user="hotelsierra" uid="226150" lat="55.6880750" lon="12.3280901"/>
+ <node id="1644513446" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:57Z" user="hotelsierra" uid="226150" lat="55.6881107" lon="12.3282391"/>
+ <node id="1644513466" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:57Z" user="hotelsierra" uid="226150" lat="55.6881549" lon="12.3277074"/>
+ <node id="1644513476" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:57Z" user="hotelsierra" uid="226150" lat="55.6881922" lon="12.3275575"/>
+ <node id="1644513485" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:58Z" user="hotelsierra" uid="226150" lat="55.6882188" lon="12.3279857"/>
+ <node id="1644513548" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6882533" lon="12.3288319"/>
+ <node id="1644513569" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6882719" lon="12.3273201"/>
+ <node id="1644513575" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6882753" lon="12.3271845"/>
+ <node id="1644513579" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6882812" lon="12.3279376"/>
+ <node id="1644513583" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6882780" lon="12.3289567"/>
+ <node id="1644513594" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6883070" lon="12.3272854"/>
+ <node id="1644513599" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6883068" lon="12.3274314"/>
+ <node id="1644513602" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6883033" lon="12.3279224"/>
+ <node id="1644513608" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6883030" lon="12.3289997"/>
+ <node id="1644513640" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6883173" lon="12.3287921"/>
+ <node id="1644513644" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6883117" lon="12.3290948"/>
+ <node id="1644513649" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:05:59Z" user="hotelsierra" uid="226150" lat="55.6883381" lon="12.3271225"/>
+ <node id="1644513653" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:00Z" user="hotelsierra" uid="226150" lat="55.6883385" lon="12.3280731"/>
+ <node id="1644513660" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:00Z" user="hotelsierra" uid="226150" lat="55.6883446" lon="12.3276341"/>
+ <node id="1644513664" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6883420" lon="12.3289169"/>
+ <node id="1644513668" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:00Z" user="hotelsierra" uid="226150" lat="55.6883720" lon="12.3272306"/>
+ <node id="1644513670" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:00Z" user="hotelsierra" uid="226150" lat="55.6883622" lon="12.3277099"/>
+ <node id="1644513677" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:00Z" user="hotelsierra" uid="226150" lat="55.6883792" lon="12.3272235"/>
+ <node id="1644513679" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6883777" lon="12.3283458"/>
+ <node id="1644513719" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:01Z" user="hotelsierra" uid="226150" lat="55.6884119" lon="12.3273276"/>
+ <node id="1644513725" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:26Z" user="hotelsierra" uid="226150" lat="55.6884358" lon="12.3286090"/>
+ <node id="1644513726" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6884259" lon="12.3289644"/>
+ <node id="1644513729" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6884346" lon="12.3290595"/>
+ <node id="1644513733" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:01Z" user="hotelsierra" uid="226150" lat="55.6884502" lon="12.3275547"/>
+ <node id="1644513736" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6884476" lon="12.3282973"/>
+ <node id="1644513753" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:01Z" user="hotelsierra" uid="226150" lat="55.6884683" lon="12.3276323"/>
+ <node id="1644513767" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6884835" lon="12.3287802"/>
+ <node id="1644513771" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6885057" lon="12.3285605"/>
+ <node id="1644513773" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6885012" lon="12.3289113"/>
+ <node id="1644513815" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:02Z" user="Hjart" uid="207581" lat="55.6885066" lon="12.3291887"/>
+ <node id="1644513817" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6885718" lon="12.3261684"/>
+ <node id="1644513822" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6885691" lon="12.3277897"/>
+ <node id="1644513825" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6885701" lon="12.3278717"/>
+ <node id="1644513830" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6885788" lon="12.3260587"/>
+ <node id="1644513833" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6885849" lon="12.3287371"/>
+ <node id="1644513838" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:27Z" user="hotelsierra" uid="226150" lat="55.6886026" lon="12.3288682"/>
+ <node id="1644513853" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6886195" lon="12.3260659"/>
+ <node id="1644513857" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:02Z" user="hotelsierra" uid="226150" lat="55.6886125" lon="12.3261765"/>
+ <node id="1644513863" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886279" lon="12.3259390"/>
+ <node id="1644513867" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886395" lon="12.3279374"/>
+ <node id="1644513871" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886385" lon="12.3280747"/>
+ <node id="1644513875" visible="true" version="3" changeset="44239651" timestamp="2016-12-07T16:48:17Z" user="Hjart" uid="207581" lat="55.6886220" lon="12.3291976"/>
+ <node id="1644513877" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886503" lon="12.3259446"/>
+ <node id="1644513880" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886418" lon="12.3260695"/>
+ <node id="1644513916" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886450" lon="12.3283834"/>
+ <node id="1644513928" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886605" lon="12.3277821"/>
+ <node id="1644513933" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886605" lon="12.3277992"/>
+ <node id="1644513937" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886608" lon="12.3278521"/>
+ <node id="1644513939" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886608" lon="12.3278660"/>
+ <node id="1644513942" visible="true" version="3" changeset="44239651" timestamp="2016-12-07T16:48:17Z" user="Hjart" uid="207581" lat="55.6886454" lon="12.3292740"/>
+ <node id="1644513945" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886850" lon="12.3277985"/>
+ <node id="1644513946" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886861" lon="12.3278509"/>
+ <node id="1644513950" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886908" lon="12.3279392"/>
+ <node id="1644513952" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:03Z" user="hotelsierra" uid="226150" lat="55.6886908" lon="12.3280747"/>
+ <node id="1644513956" visible="true" version="3" changeset="44239651" timestamp="2016-12-07T16:48:17Z" user="Hjart" uid="207581" lat="55.6886681" lon="12.3294939"/>
+ <node id="1644513962" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887069" lon="12.3280337"/>
+ <node id="1644513968" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6886943" lon="12.3284931"/>
+ <node id="1644513973" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887053" lon="12.3288901"/>
+ <node id="1644513979" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887104" lon="12.3281479"/>
+ <node id="1644513983" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887124" lon="12.3286795"/>
+ <node id="1644513987" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887265" lon="12.3279195"/>
+ <node id="1644513990" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887358" lon="12.3279688"/>
+ <node id="1644514020" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887506" lon="12.3282326"/>
+ <node id="1644514023" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887571" lon="12.3288241"/>
+ <node id="1644514028" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887466" lon="12.3289864"/>
+ <node id="1644514033" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:04Z" user="hotelsierra" uid="226150" lat="55.6887622" lon="12.3286323"/>
+ <node id="1644514037" visible="true" version="3" changeset="44239651" timestamp="2016-12-07T16:48:17Z" user="Hjart" uid="207581" lat="55.6887528" lon="12.3303455"/>
+ <node id="1644514040" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6887898" lon="12.3280230"/>
+ <node id="1644514045" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6888029" lon="12.3278731"/>
+ <node id="1644514049" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6887933" lon="12.3281336"/>
+ <node id="1644514052" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6887994" lon="12.3283388"/>
+ <node id="1644514057" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6888123" lon="12.3279234"/>
+ <node id="1644514061" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6888436" lon="12.3288580"/>
+ <node id="1644514066" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6889650" lon="12.3283285"/>
+ <node id="1644514068" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6889806" lon="12.3283775"/>
+ <node id="1644514071" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6889892" lon="12.3285060"/>
+ <node id="1644514074" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6889942" lon="12.3283659"/>
+ <node id="1644514076" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6890048" lon="12.3283998"/>
+ <node id="1644514079" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6889952" lon="12.3284534"/>
+ <node id="1644514081" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6890058" lon="12.3284908"/>
+ <node id="1644514083" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6890214" lon="12.3286175"/>
+ <node id="1644514087" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6890349" lon="12.3283320"/>
+ <node id="1644514089" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:05Z" user="hotelsierra" uid="226150" lat="55.6890319" lon="12.3284239"/>
+ <node id="1644514112" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890500" lon="12.3282482"/>
+ <node id="1644514116" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890445" lon="12.3283659"/>
+ <node id="1644514121" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890490" lon="12.3284025"/>
+ <node id="1644514125" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890550" lon="12.3283981"/>
+ <node id="1644514127" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890666" lon="12.3283008"/>
+ <node id="1644514131" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890591" lon="12.3284355"/>
+ <node id="1644514134" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890716" lon="12.3285631"/>
+ <node id="1644514139" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890772" lon="12.3283365"/>
+ <node id="1644514142" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6890953" lon="12.3284043"/>
+ <node id="1644514143" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891311" lon="12.3273086"/>
+ <node id="1644514145" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891573" lon="12.3271721"/>
+ <node id="1644514147" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891595" lon="12.3261966"/>
+ <node id="1644514150" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891756" lon="12.3260547"/>
+ <node id="1644514153" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891819" lon="12.3272131"/>
+ <node id="1644514156" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891844" lon="12.3274004"/>
+ <node id="1644514160" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891927" lon="12.3260753"/>
+ <node id="1644514164" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6891955" lon="12.3271043"/>
+ <node id="1644514168" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:06Z" user="hotelsierra" uid="226150" lat="55.6892108" lon="12.3259281"/>
+ <node id="1644514173" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892327" lon="12.3274986"/>
+ <node id="1644514176" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892501" lon="12.3281042"/>
+ <node id="1644514179" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892465" lon="12.3282487"/>
+ <node id="1644514198" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892726" lon="12.3261377"/>
+ <node id="1644514199" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892696" lon="12.3262956"/>
+ <node id="1644514203" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892714" lon="12.3272390"/>
+ <node id="1644514206" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892679" lon="12.3274317"/>
+ <node id="1644514209" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892697" lon="12.3283335"/>
+ <node id="1644514211" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892802" lon="12.3282166"/>
+ <node id="1644514214" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6893068" lon="12.3260137"/>
+ <node id="1644514220" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6893048" lon="12.3261654"/>
+ <node id="1644514221" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6892941" lon="12.3269660"/>
+ <node id="1644514224" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:07Z" user="hotelsierra" uid="226150" lat="55.6893026" lon="12.3276199"/>
+ <node id="1644514228" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893122" lon="12.3269250"/>
+ <node id="1644514231" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893094" lon="12.3280551"/>
+ <node id="1644514233" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893388" lon="12.3274031"/>
+ <node id="1644514235" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893368" lon="12.3275557"/>
+ <node id="1644514237" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893275" lon="12.3281212"/>
+ <node id="1644514240" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893443" lon="12.3270392"/>
+ <node id="1644514242" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893557" lon="12.3282273"/>
+ <node id="1644514245" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893614" lon="12.3269972"/>
+ <node id="1644514248" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893685" lon="12.3272961"/>
+ <node id="1644514250" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893614" lon="12.3273389"/>
+ <node id="1644514271" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893667" lon="12.3280846"/>
+ <node id="1644514273" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:08Z" user="hotelsierra" uid="226150" lat="55.6893617" lon="12.3282532"/>
+ <node id="1644514275" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6894007" lon="12.3274736"/>
+ <node id="1644514277" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6893949" lon="12.3281925"/>
+ <node id="1644514281" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6894087" lon="12.3271748"/>
+ <node id="1644514285" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6894228" lon="12.3274094"/>
+ <node id="1644514293" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6894389" lon="12.3273701"/>
+ <node id="1644514306" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:09Z" user="hotelsierra" uid="226150" lat="55.6894776" lon="12.3272488"/>
+ <node id="1644514319" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:02Z" user="Hjart" uid="207581" lat="55.6894336" lon="12.3275746"/>
+ <node id="1728332982" visible="true" version="1" changeset="11398939" timestamp="2012-04-23T19:29:02Z" user="Fod" uid="329844" lat="55.6896687" lon="12.3263455"/>
+ <node id="1728348126" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:02Z" user="Hjart" uid="207581" lat="55.6878030" lon="12.3256926"/>
+ <node id="1744654808" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:02Z" user="Hjart" uid="207581" lat="55.6890764" lon="12.3281256">
+  <tag k="traffic_calming" v="choker"/>
+  <tag k="website" v="http://www.panoramio.com/photo/71671077"/>
+ </node>
+ <node id="1744654809" visible="true" version="1" changeset="11533133" timestamp="2012-05-07T20:02:02Z" user="Fod" uid="329844" lat="55.6896275" lon="12.3268077">
+  <tag k="traffic_calming" v="choker"/>
+  <tag k="website" v="http://www.panoramio.com/photo/71670941"/>
+ </node>
+ <node id="1783658072" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6878357" lon="12.3315091"/>
+ <node id="1783658073" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6878690" lon="12.3314016"/>
+ <node id="1783658075" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6878842" lon="12.3302567"/>
+ <node id="1783658076" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6879508" lon="12.3323476"/>
+ <node id="1783658078" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6880145" lon="12.3299665"/>
+ <node id="1783658079" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6880236" lon="12.3310576"/>
+ <node id="1783658080" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6880175" lon="12.3326969"/>
+ <node id="1783658082" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6881811" lon="12.3321648"/>
+ <node id="1783658083" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6882144" lon="12.3298590"/>
+ <node id="1783658084" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6882447" lon="12.3325948"/>
+ <node id="1783658086" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6882750" lon="12.3307620"/>
+ <node id="1783658087" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6883731" lon="12.3278264"/>
+ <node id="1783658088" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6883746" lon="12.3278842"/>
+ <node id="1783658089" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6883772" lon="12.3286153"/>
+ <node id="1783658090" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6883858" lon="12.3286566"/>
+ <node id="1783658091" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884104" lon="12.3285936"/>
+ <node id="1783658092" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884190" lon="12.3286349"/>
+ <node id="1783658093" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884436" lon="12.3279532"/>
+ <node id="1783658094" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884495" lon="12.3280428"/>
+ <node id="1783658097" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884731" lon="12.3279470"/>
+ <node id="1783658098" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:16Z" user="hotelsierra" uid="226150" lat="55.6884746" lon="12.3279699"/>
+ <node id="1783658099" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884720" lon="12.3306975"/>
+ <node id="1783658100" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884720" lon="12.3327991"/>
+ <node id="1783658101" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884860" lon="12.3278184"/>
+ <node id="1783658102" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884860" lon="12.3278761"/>
+ <node id="1783658103" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884750" lon="12.3280375"/>
+ <node id="1783658104" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884780" lon="12.3280815"/>
+ <node id="1783658105" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884902" lon="12.3317026"/>
+ <node id="1783658107" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884932" lon="12.3300310"/>
+ <node id="1783658108" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6884992" lon="12.3311812"/>
+ <node id="1783658109" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885348" lon="12.3279332"/>
+ <node id="1783658110" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885364" lon="12.3279570"/>
+ <node id="1783658111" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885295" lon="12.3302245"/>
+ <node id="1783658112" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885452" lon="12.3280262"/>
+ <node id="1783658113" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885479" lon="12.3280670"/>
+ <node id="1783658114" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885602" lon="12.3279279"/>
+ <node id="1783658115" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6885664" lon="12.3280218"/>
+ <node id="1783658117" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6886962" lon="12.3327346"/>
+ <node id="1783658120" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6888537" lon="12.3320519"/>
+ <node id="1783658121" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:17Z" user="hotelsierra" uid="226150" lat="55.6889052" lon="12.3324067"/>
+ <node id="1845999126" visible="true" version="3" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6900919" lon="12.3277116"/>
+ <node id="2190613106" visible="true" version="1" changeset="15288962" timestamp="2013-03-08T01:20:19Z" user="Fod" uid="329844" lat="55.6889232" lon="12.3316318"/>
+ <node id="2190613107" visible="true" version="2" changeset="44239651" timestamp="2016-12-07T16:48:17Z" user="Hjart" uid="207581" lat="55.6891290" lon="12.3330890"/>
+ <node id="2218893424" visible="true" version="1" changeset="15481847" timestamp="2013-03-24T17:11:53Z" user="b-holdet" uid="1196017" lat="55.6894700" lon="12.3360586"/>
+ <node id="2218893434" visible="true" version="2" changeset="31911670" timestamp="2015-06-12T04:07:11Z" user="b-holdet" uid="1196017" lat="55.6881068" lon="12.3374295"/>
+ <node id="2218893441" visible="true" version="2" changeset="31911670" timestamp="2015-06-12T04:07:11Z" user="b-holdet" uid="1196017" lat="55.6882680" lon="12.3383265"/>
+ <node id="2218893446" visible="true" version="1" changeset="15481847" timestamp="2013-03-24T17:11:53Z" user="b-holdet" uid="1196017" lat="55.6882847" lon="12.3373139"/>
+ <node id="2218893465" visible="true" version="1" changeset="15481847" timestamp="2013-03-24T17:11:53Z" user="b-holdet" uid="1196017" lat="55.6882544" lon="12.3365843"/>
+ <node id="2382207017" visible="true" version="1" changeset="16924348" timestamp="2013-07-12T10:40:09Z" user="Fod" uid="329844" lat="55.6885263" lon="12.3290288"/>
+ <node id="2382207018" visible="true" version="1" changeset="16924348" timestamp="2013-07-12T10:40:09Z" user="Fod" uid="329844" lat="55.6885709" lon="12.3292728"/>
+ <node id="2382207019" visible="true" version="1" changeset="16924348" timestamp="2013-07-12T10:40:09Z" user="Fod" uid="329844" lat="55.6886409" lon="12.3290977"/>
+ <node id="2411158080" visible="true" version="2" changeset="24553436" timestamp="2014-08-05T11:28:40Z" user="Toftebo" uid="2234329" lat="55.6878106" lon="12.3254983"/>
+ <node id="2997372138" visible="true" version="2" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6903451" lon="12.3264751"/>
+ <node id="2997409448" visible="true" version="2" changeset="24552605" timestamp="2014-08-05T10:27:56Z" user="Toftebo" uid="2234329" lat="55.6886244" lon="12.3297669">
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="Risby"/>
+ </node>
+ <node id="2997409922" visible="true" version="1" changeset="24552605" timestamp="2014-08-05T10:27:41Z" user="Toftebo" uid="2234329" lat="55.6886909" lon="12.3293378">
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="Risby"/>
+ </node>
+ <node id="3005019700" visible="true" version="3" changeset="25751688" timestamp="2014-09-29T17:44:27Z" user="Hjart" uid="207581" lat="55.6897407" lon="12.3262099"/>
+ <node id="3005610534" visible="true" version="1" changeset="24622649" timestamp="2014-08-08T19:44:57Z" user="Toftebo" uid="2234329" lat="55.6886077" lon="12.3279365"/>
+ <node id="3005610535" visible="true" version="1" changeset="24622649" timestamp="2014-08-08T19:44:57Z" user="Toftebo" uid="2234329" lat="55.6885787" lon="12.3280571"/>
+ <node id="3005610536" visible="true" version="1" changeset="24622649" timestamp="2014-08-08T19:44:57Z" user="Toftebo" uid="2234329" lat="55.6885441" lon="12.3281441"/>
+ <node id="3005610537" visible="true" version="2" changeset="24715834" timestamp="2014-08-13T05:35:04Z" user="Hjart" uid="207581" lat="55.6884814" lon="12.3282682"/>
+ <node id="3013708019" visible="true" version="1" changeset="24715834" timestamp="2014-08-13T05:34:36Z" user="Hjart" uid="207581" lat="55.6881089" lon="12.3272989"/>
+ <node id="3013708020" visible="true" version="1" changeset="24715834" timestamp="2014-08-13T05:34:36Z" user="Hjart" uid="207581" lat="55.6887477" lon="12.3284940"/>
+ <node id="3102383583" visible="true" version="1" changeset="25751688" timestamp="2014-09-29T17:44:11Z" user="Hjart" uid="207581" lat="55.6907214" lon="12.3254221"/>
+ <node id="3246961761" visible="true" version="1" changeset="27619122" timestamp="2014-12-21T21:57:36Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6894634" lon="12.3274715"/>
+ <node id="3246961771" visible="true" version="1" changeset="27619122" timestamp="2014-12-21T21:57:36Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6896694" lon="12.3265863"/>
+ <node id="3404321212" visible="true" version="3" changeset="91807881" timestamp="2020-10-01T07:32:45Z" user="Leif Lodahl" uid="125657" lat="55.6888534" lon="12.3302722">
+  <tag k="name" v="Risby Vandværkshøj"/>
+  <tag k="tourism" v="viewpoint"/>
+ </node>
+ <node id="3589025322" visible="true" version="2" changeset="36653017" timestamp="2016-01-18T10:39:52Z" user="Hjart" uid="207581" lat="55.6879737" lon="12.3375361"/>
+ <node id="3589025323" visible="true" version="1" changeset="31911670" timestamp="2015-06-12T04:07:03Z" user="b-holdet" uid="1196017" lat="55.6880173" lon="12.3384342"/>
+ <node id="3589025324" visible="true" version="1" changeset="31911670" timestamp="2015-06-12T04:07:03Z" user="b-holdet" uid="1196017" lat="55.6880343" lon="12.3383142"/>
+ <node id="3933306631" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6888148" lon="12.3305296"/>
+ <node id="3933306632" visible="true" version="2" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6881632" lon="12.3387632"/>
+ <node id="3933306633" visible="true" version="2" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6879318" lon="12.3393394"/>
+ <node id="3933306634" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6896585" lon="12.3301594"/>
+ <node id="3933306636" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6900063" lon="12.3343712"/>
+ <node id="3933306637" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6900214" lon="12.3389424"/>
+ <node id="3933306638" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6900880" lon="12.3334001"/>
+ <node id="3933306639" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6901182" lon="12.3303419"/>
+ <node id="3933306640" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6902331" lon="12.3388512"/>
+ <node id="3933306641" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6904116" lon="12.3374133"/>
+ <node id="3933306642" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:02Z" user="b-holdet" uid="1196017" lat="55.6904324" lon="12.3301504"/>
+ <node id="5416460927" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:08Z" user="Hjart" uid="207581" lat="55.6873221" lon="12.3272693"/>
+ <node id="5416460931" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:08Z" user="Hjart" uid="207581" lat="55.6891538" lon="12.3255926"/>
+ <node id="5416460932" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6891251" lon="12.3260969"/>
+ <node id="5416460933" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6891477" lon="12.3263329"/>
+ <node id="5416460934" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6892891" lon="12.3264509"/>
+ <node id="5416460935" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6893721" lon="12.3261491"/>
+ <node id="5416460936" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6894992" lon="12.3271939"/>
+ <node id="5416460937" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6891553" lon="12.3266628"/>
+ <node id="5416460938" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6887871" lon="12.3275667"/>
+ <node id="5416460939" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6885740" lon="12.3271295"/>
+ <node id="5416460940" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6887055" lon="12.3255269"/>
+ <node id="5416460941" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6890865" lon="12.3249221"/>
+ <node id="5416460942" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6891644" lon="12.3254438"/>
+ <node id="5416460943" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6893050" lon="12.3253459"/>
+ <node id="5416460944" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6894100" lon="12.3253083"/>
+ <node id="5416460945" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6896550" lon="12.3253311"/>
+ <node id="5416460946" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6896278" lon="12.3243923"/>
+ <node id="5416460947" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6888219" lon="12.3254317"/>
+ <node id="5416460948" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6888325" lon="12.3249207"/>
+ <node id="5416460949" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6875987" lon="12.3264523"/>
+ <node id="5416460950" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6877635" lon="12.3263477"/>
+ <node id="5416460951" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6877628" lon="12.3258515"/>
+ <node id="5416460952" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6875337" lon="12.3262055"/>
+ <node id="5416460953" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6882512" lon="12.3291385"/>
+ <node id="5416460954" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581" lat="55.6883479" lon="12.3293558"/>
+ <node id="5433644891" visible="true" version="1" changeset="56639047" timestamp="2018-02-24T15:41:15Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6877907" lon="12.3263654"/>
+ <node id="6399649943" visible="true" version="1" changeset="69134469" timestamp="2019-04-11T23:11:07Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6883165" lon="12.3292754"/>
+ <node id="7264470598" visible="true" version="1" changeset="81787589" timestamp="2020-03-04T18:12:38Z" user="autoAWS" uid="8209541" lat="55.6890660" lon="12.3277320">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="52e8d3c4-9d32-4e50-a34f-9e5cf353706d"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="7264473153" visible="true" version="1" changeset="81787589" timestamp="2020-03-04T18:13:42Z" user="autoAWS" uid="8209541" lat="55.6887410" lon="12.3280850">
+  <tag k="addr:city" v="Albertslund"/>
+  <tag k="addr:country" v="DK"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:municipality" v="Albertslund"/>
+  <tag k="addr:postcode" v="2620"/>
+  <tag k="addr:street" v="Ledøjevej"/>
+  <tag k="osak:identifier" v="0a3f507c-a499-32b8-e044-0003ba298018"/>
+  <tag k="source" v="Danmarks Adresseregister"/>
+ </node>
+ <node id="7948202240" visible="true" version="1" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6879880" lon="12.3370695"/>
+ <node id="7948202241" visible="true" version="1" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6881040" lon="12.3366002"/>
+ <node id="7948202243" visible="true" version="1" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6869053" lon="12.3335832"/>
+ <node id="7948202245" visible="true" version="1" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6876459" lon="12.3394548"/>
+ <node id="7948202246" visible="true" version="1" changeset="91590383" timestamp="2020-09-27T16:42:57Z" user="Leif Lodahl" uid="125657" lat="55.6877358" lon="12.3389975"/>
+ <node id="7962048132" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657" lat="55.6886855" lon="12.3290851"/>
+ <node id="7962048133" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657" lat="55.6886121" lon="12.3293676"/>
+ <node id="7962048134" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657" lat="55.6886141" lon="12.3296543"/>
+ <node id="7962048135" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657" lat="55.6885196" lon="12.3292182"/>
+ <node id="9938068025" visible="true" version="1" changeset="124613611" timestamp="2022-08-07T21:08:09Z" user="nimapper" uid="36080" lat="55.6889950" lon="12.3276472">
+  <tag k="name" v="Risby"/>
+  <tag k="place" v="hamlet"/>
+  <tag k="population" v="106"/>
+  <tag k="wikidata" v="Q12333560"/>
+  <tag k="wikipedia" v="da:Risby (Herstedvester Sogn)"/>
+ </node>
+ <node id="10547716359" visible="true" version="2" changeset="132177867" timestamp="2023-02-06T21:42:34Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6886110" lon="12.3291812">
+  <tag k="direction" v="backward"/>
+  <tag k="highway" v="give_way"/>
+ </node>
+ <node id="10547716360" visible="true" version="1" changeset="131210462" timestamp="2023-01-13T01:51:34Z" user="Niels Elgaard Larsen" uid="1288" lat="55.6886551" lon="12.3286020">
+  <tag k="highway" v="give_way"/>
+ </node>
+ <way id="25500486" visible="true" version="23" changeset="90035153" timestamp="2020-08-27T15:30:39Z" user="Admasawi" uid="8792857">
+  <nd ref="1644514037"/>
+  <nd ref="2190613106"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Østbakkevej"/>
+  <tag k="source:maxspeed" v="sign"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="26681613" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:23Z" user="hotelsierra" uid="226150">
+  <nd ref="292622910"/>
+  <nd ref="1783658083"/>
+  <nd ref="1783658078"/>
+  <nd ref="292622911"/>
+  <nd ref="1783658075"/>
+  <nd ref="292622913"/>
+  <nd ref="1783658086"/>
+  <nd ref="1783658099"/>
+  <nd ref="292622915"/>
+  <nd ref="1783658111"/>
+  <nd ref="1783658107"/>
+  <nd ref="292622910"/>
+  <tag k="landuse" v="forest"/>
+ </way>
+ <way id="26681616" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:24Z" user="hotelsierra" uid="226150">
+  <nd ref="292622961"/>
+  <nd ref="1783658108"/>
+  <nd ref="292622962"/>
+  <nd ref="292622963"/>
+  <nd ref="1783658073"/>
+  <nd ref="292622964"/>
+  <nd ref="1783658079"/>
+  <nd ref="292622961"/>
+  <tag k="landuse" v="forest"/>
+ </way>
+ <way id="26681617" visible="true" version="2" changeset="11866689" timestamp="2012-06-11T17:13:23Z" user="hotelsierra" uid="226150">
+  <nd ref="292622967"/>
+  <nd ref="1783658120"/>
+  <nd ref="1783658121"/>
+  <nd ref="292622968"/>
+  <nd ref="1783658117"/>
+  <nd ref="1783658100"/>
+  <nd ref="292622969"/>
+  <nd ref="1783658084"/>
+  <nd ref="1783658082"/>
+  <nd ref="292622970"/>
+  <nd ref="1783658105"/>
+  <nd ref="292622967"/>
+  <tag k="landuse" v="forest"/>
+ </way>
+ <way id="27351337" visible="true" version="8" changeset="90035153" timestamp="2020-08-27T15:30:39Z" user="Admasawi" uid="8792857">
+  <nd ref="85585690"/>
+  <nd ref="1644513815"/>
+  <nd ref="6399649943"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Ledøjevej"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="151621209" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:19Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513380"/>
+  <nd ref="1644513476"/>
+  <nd ref="1644513579"/>
+  <nd ref="1644513602"/>
+  <nd ref="1644513653"/>
+  <nd ref="1644513446"/>
+  <nd ref="1644513401"/>
+  <nd ref="1644513485"/>
+  <nd ref="1644513466"/>
+  <nd ref="1644513382"/>
+  <nd ref="1644513380"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621211" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:19Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514231"/>
+  <nd ref="1644514176"/>
+  <nd ref="1644514211"/>
+  <nd ref="1644514179"/>
+  <nd ref="1644514209"/>
+  <nd ref="1644514273"/>
+  <nd ref="1644514242"/>
+  <nd ref="1644514277"/>
+  <nd ref="1644514271"/>
+  <nd ref="1644514237"/>
+  <nd ref="1644514231"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621216" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:20Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513733"/>
+  <nd ref="1644513660"/>
+  <nd ref="1644513670"/>
+  <nd ref="1644513753"/>
+  <nd ref="1644513733"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621221" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:21Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514228"/>
+  <nd ref="1644514221"/>
+  <nd ref="1644514240"/>
+  <nd ref="1644514245"/>
+  <nd ref="1644514228"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621224" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:21Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514020"/>
+  <nd ref="1644513916"/>
+  <nd ref="1644513968"/>
+  <nd ref="1644514052"/>
+  <nd ref="1644514020"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621226" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:21Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513833"/>
+  <nd ref="1644513767"/>
+  <nd ref="1644513773"/>
+  <nd ref="1644513838"/>
+  <nd ref="1644513833"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621230" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:22Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514040"/>
+  <nd ref="1644513962"/>
+  <nd ref="1644513979"/>
+  <nd ref="1644514049"/>
+  <nd ref="1644514040"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621232" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:22Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513640"/>
+  <nd ref="1644513548"/>
+  <nd ref="1644513583"/>
+  <nd ref="1644513664"/>
+  <nd ref="1644513640"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621235" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:23Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513853"/>
+  <nd ref="1644513830"/>
+  <nd ref="1644513817"/>
+  <nd ref="1644513857"/>
+  <nd ref="1644513853"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621237" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:23Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513933"/>
+  <nd ref="1644513945"/>
+  <nd ref="1644513946"/>
+  <nd ref="1644513937"/>
+  <nd ref="1644513933"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621238" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:23Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514250"/>
+  <nd ref="1644514233"/>
+  <nd ref="1644514275"/>
+  <nd ref="1644514285"/>
+  <nd ref="1644514250"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621248" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:24Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514045"/>
+  <nd ref="1644513987"/>
+  <nd ref="1644513990"/>
+  <nd ref="1644514057"/>
+  <nd ref="1644514045"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621249" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:24Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514206"/>
+  <nd ref="1644514173"/>
+  <nd ref="1644514224"/>
+  <nd ref="1644514235"/>
+  <nd ref="1644514206"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621251" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:25Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513736"/>
+  <nd ref="1644513679"/>
+  <nd ref="1644513725"/>
+  <nd ref="1644513771"/>
+  <nd ref="1644513736"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621253" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:25Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513950"/>
+  <nd ref="1644513867"/>
+  <nd ref="1644513871"/>
+  <nd ref="1644513952"/>
+  <nd ref="1644513950"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621255" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:25Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513726"/>
+  <nd ref="1644513608"/>
+  <nd ref="1644513644"/>
+  <nd ref="1644513729"/>
+  <nd ref="1644513726"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621257" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:25Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513853"/>
+  <nd ref="1644513880"/>
+  <nd ref="1644513877"/>
+  <nd ref="1644513863"/>
+  <nd ref="1644513853"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621261" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:26Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514306"/>
+  <nd ref="1644514293"/>
+  <nd ref="1644514248"/>
+  <nd ref="1644514281"/>
+  <nd ref="1644514306"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621269" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:27Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514033"/>
+  <nd ref="1644513983"/>
+  <nd ref="1644514023"/>
+  <nd ref="1644513973"/>
+  <nd ref="1644514028"/>
+  <nd ref="1644514061"/>
+  <nd ref="1644514033"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621270" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:27Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513928"/>
+  <nd ref="1644513822"/>
+  <nd ref="1644513825"/>
+  <nd ref="1644513939"/>
+  <nd ref="1644513937"/>
+  <nd ref="1644513933"/>
+  <nd ref="1644513928"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621271" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:27Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514116"/>
+  <nd ref="1644514139"/>
+  <nd ref="1644514142"/>
+  <nd ref="1644514131"/>
+  <nd ref="1644514121"/>
+  <nd ref="1644514125"/>
+  <nd ref="1644514116"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621273" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:28Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514089"/>
+  <nd ref="1644514079"/>
+  <nd ref="1644514081"/>
+  <nd ref="1644514071"/>
+  <nd ref="1644514083"/>
+  <nd ref="1644514134"/>
+  <nd ref="1644514089"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621280" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:29Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514164"/>
+  <nd ref="1644514145"/>
+  <nd ref="1644514153"/>
+  <nd ref="1644514143"/>
+  <nd ref="1644514156"/>
+  <nd ref="1644514203"/>
+  <nd ref="1644514164"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621290" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:30Z" user="hotelsierra" uid="226150">
+  <nd ref="1644513649"/>
+  <nd ref="1644513668"/>
+  <nd ref="1644513677"/>
+  <nd ref="1644513719"/>
+  <nd ref="1644513599"/>
+  <nd ref="1644513569"/>
+  <nd ref="1644513594"/>
+  <nd ref="1644513575"/>
+  <nd ref="1644513649"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621291" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:30Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514168"/>
+  <nd ref="1644514150"/>
+  <nd ref="1644514160"/>
+  <nd ref="1644514147"/>
+  <nd ref="1644514199"/>
+  <nd ref="1644514220"/>
+  <nd ref="1644514198"/>
+  <nd ref="1644514214"/>
+  <nd ref="1644514168"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="151621294" visible="true" version="1" changeset="10770652" timestamp="2012-02-23T18:06:31Z" user="hotelsierra" uid="226150">
+  <nd ref="1644514112"/>
+  <nd ref="1644514066"/>
+  <nd ref="1644514068"/>
+  <nd ref="1644514074"/>
+  <nd ref="1644514076"/>
+  <nd ref="1644514116"/>
+  <nd ref="1644514087"/>
+  <nd ref="1644514127"/>
+  <nd ref="1644514112"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="162607721" visible="true" version="9" changeset="90949173" timestamp="2020-09-15T22:40:32Z" user="Niels Elgaard Larsen" uid="1288">
+  <nd ref="3005019700"/>
+  <nd ref="3246961771"/>
+  <nd ref="1744654809"/>
+  <nd ref="85585680"/>
+  <nd ref="3246961761"/>
+  <nd ref="1644514319"/>
+  <nd ref="85585682"/>
+  <nd ref="85585683"/>
+  <nd ref="1744654808"/>
+  <nd ref="85585685"/>
+  <nd ref="3013708020"/>
+  <nd ref="85585686"/>
+  <tag k="hazard" v="animal_crossing"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Ledøjevej"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="162607724" visible="true" version="7" changeset="131210462" timestamp="2023-01-13T01:51:34Z" user="Niels Elgaard Larsen" uid="1288">
+  <nd ref="335868339"/>
+  <nd ref="1728348126"/>
+  <nd ref="335868340"/>
+  <nd ref="5433644891"/>
+  <nd ref="1644513303"/>
+  <nd ref="335868359"/>
+  <nd ref="335868361"/>
+  <nd ref="3013708019"/>
+  <nd ref="1388170001"/>
+  <nd ref="335868362"/>
+  <nd ref="3005610537"/>
+  <nd ref="10547716360"/>
+  <nd ref="85585686"/>
+  <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Risbystræde"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="166975991" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:19Z" user="hotelsierra" uid="226150">
+  <nd ref="1783658114"/>
+  <nd ref="1783658109"/>
+  <nd ref="1783658110"/>
+  <nd ref="1783658098"/>
+  <nd ref="1783658097"/>
+  <nd ref="1783658093"/>
+  <nd ref="1783658094"/>
+  <nd ref="1783658103"/>
+  <nd ref="1783658104"/>
+  <nd ref="1783658113"/>
+  <nd ref="1783658112"/>
+  <nd ref="1783658115"/>
+  <nd ref="1783658114"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="166975992" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:19Z" user="hotelsierra" uid="226150">
+  <nd ref="1783658091"/>
+  <nd ref="1783658089"/>
+  <nd ref="1783658090"/>
+  <nd ref="1783658092"/>
+  <nd ref="1783658091"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="166975995" visible="true" version="1" changeset="11866689" timestamp="2012-06-11T17:13:20Z" user="hotelsierra" uid="226150">
+  <nd ref="1783658101"/>
+  <nd ref="1783658087"/>
+  <nd ref="1783658088"/>
+  <nd ref="1783658102"/>
+  <nd ref="1783658101"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="208823805" visible="true" version="3" changeset="44239651" timestamp="2016-12-07T16:48:26Z" user="Hjart" uid="207581">
+  <nd ref="2190613106"/>
+  <nd ref="2190613107"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="50"/>
+  <tag k="name" v="Østbakkevej"/>
+  <tag k="source:maxspeed" v="DK:urban"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="296752267" visible="true" version="1" changeset="24622649" timestamp="2014-08-08T19:44:57Z" user="Toftebo" uid="2234329">
+  <nd ref="3005610534"/>
+  <nd ref="3005610535"/>
+  <nd ref="3005610536"/>
+  <nd ref="3005610537"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Risbystræde"/>
+  <tag k="surface" v="unpaved"/>
+ </way>
+ <way id="390169727" visible="true" version="1" changeset="36438064" timestamp="2016-01-08T04:28:03Z" user="b-holdet" uid="1196017">
+  <nd ref="3933306637"/>
+  <nd ref="3933306640"/>
+  <nd ref="3933306641"/>
+  <nd ref="3933306636"/>
+  <nd ref="3933306638"/>
+  <nd ref="282543637"/>
+  <nd ref="3933306642"/>
+  <nd ref="3933306639"/>
+  <nd ref="3933306634"/>
+  <nd ref="3933306631"/>
+  <nd ref="3933306637"/>
+  <tag k="landuse" v="forest"/>
+ </way>
+ <way id="561777285" visible="true" version="1" changeset="56412567" timestamp="2018-02-16T12:52:09Z" user="Hjart" uid="207581">
+  <nd ref="5416460940"/>
+  <nd ref="5416460939"/>
+  <nd ref="5416460938"/>
+  <nd ref="5416460937"/>
+  <nd ref="5416460936"/>
+  <nd ref="1728332982"/>
+  <nd ref="5416460935"/>
+  <nd ref="5416460934"/>
+  <nd ref="5416460933"/>
+  <nd ref="5416460932"/>
+  <nd ref="5416460931"/>
+  <nd ref="5416460940"/>
+  <tag k="landuse" v="meadow"/>
+ </way>
+ <way id="778199106" visible="true" version="2" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657">
+  <nd ref="2411158080"/>
+  <nd ref="5416460951"/>
+  <nd ref="5416460950"/>
+  <nd ref="5416460949"/>
+  <nd ref="5416460952"/>
+  <nd ref="115149756"/>
+  <nd ref="5416460927"/>
+  <nd ref="277859317"/>
+  <nd ref="277859318"/>
+  <nd ref="5416460953"/>
+  <nd ref="5416460954"/>
+  <nd ref="7962048135"/>
+  <nd ref="7962048132"/>
+  <nd ref="277859319"/>
+  <nd ref="277859320"/>
+  <nd ref="277859321"/>
+  <nd ref="277859322"/>
+  <nd ref="1845999126"/>
+  <nd ref="2997372138"/>
+  <nd ref="277858731"/>
+  <nd ref="3102383583"/>
+  <nd ref="277859327"/>
+  <nd ref="277858734"/>
+  <nd ref="277858735"/>
+  <nd ref="277859330"/>
+  <nd ref="277859331"/>
+  <nd ref="277859332"/>
+  <nd ref="5416460946"/>
+  <nd ref="5416460945"/>
+  <nd ref="5416460944"/>
+  <nd ref="5416460943"/>
+  <nd ref="5416460942"/>
+  <nd ref="5416460941"/>
+  <nd ref="5416460948"/>
+  <nd ref="5416460947"/>
+  <nd ref="277859339"/>
+  <nd ref="277859308"/>
+  <nd ref="277859309"/>
+ </way>
+ <way id="841383666" visible="true" version="2" changeset="131210462" timestamp="2023-01-13T01:51:34Z" user="Niels Elgaard Larsen" uid="1288">
+  <nd ref="85585690"/>
+  <nd ref="10547716359"/>
+  <nd ref="1644513875"/>
+  <nd ref="1644513942"/>
+  <nd ref="1644513956"/>
+  <nd ref="1644514037"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Østbakkevej"/>
+  <tag k="source:maxspeed" v="sign"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="841383668" visible="true" version="2" changeset="90949173" timestamp="2020-09-15T22:40:32Z" user="Niels Elgaard Larsen" uid="1288">
+  <nd ref="85585686"/>
+  <nd ref="85585687"/>
+  <nd ref="85585688"/>
+  <nd ref="85585690"/>
+  <tag k="hazard" v="animal_crossing"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Ledøjevej"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="853628298" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657">
+  <nd ref="3933306631"/>
+  <nd ref="7962048132"/>
+  <nd ref="277859319"/>
+  <nd ref="277859320"/>
+  <nd ref="277859321"/>
+  <nd ref="277859322"/>
+  <nd ref="3933306642"/>
+  <nd ref="3933306639"/>
+  <nd ref="3933306634"/>
+  <nd ref="3933306631"/>
+  <tag k="landuse" v="meadow"/>
+ </way>
+ <way id="853628299" visible="true" version="1" changeset="91807685" timestamp="2020-10-01T07:30:07Z" user="Leif Lodahl" uid="125657">
+  <nd ref="7962048133"/>
+  <nd ref="7962048134"/>
+  <nd ref="2218893424"/>
+  <nd ref="2218893465"/>
+  <nd ref="2218893446"/>
+  <nd ref="2218893434"/>
+  <nd ref="2218893441"/>
+  <nd ref="3933306632"/>
+  <nd ref="3933306633"/>
+  <nd ref="7948202245"/>
+  <nd ref="7948202246"/>
+  <nd ref="3589025323"/>
+  <nd ref="3589025324"/>
+  <nd ref="3589025322"/>
+  <nd ref="7948202240"/>
+  <nd ref="7948202241"/>
+  <nd ref="7948202243"/>
+  <nd ref="290004468"/>
+  <nd ref="1783658080"/>
+  <nd ref="1783658076"/>
+  <nd ref="1783658072"/>
+  <nd ref="290004467"/>
+  <nd ref="5416460954"/>
+  <nd ref="7962048135"/>
+  <nd ref="7962048133"/>
+  <tag k="natural" v="grassland"/>
+ </way>
+ <relation id="34431" visible="true" version="27" changeset="90035153" timestamp="2020-08-27T15:30:39Z" user="Admasawi" uid="8792857">
+  <member type="way" ref="4416979" role=""/>
+  <member type="way" ref="242534764" role=""/>
+  <member type="way" ref="115750304" role=""/>
+  <member type="way" ref="683012089" role=""/>
+  <member type="way" ref="683012090" role=""/>
+  <member type="way" ref="4416982" role=""/>
+  <member type="way" ref="827109516" role=""/>
+  <member type="way" ref="156306579" role=""/>
+  <member type="way" ref="26463513" role=""/>
+  <member type="way" ref="27351053" role=""/>
+  <member type="way" ref="27351240" role=""/>
+  <member type="way" ref="27351242" role=""/>
+  <member type="way" ref="162607714" role=""/>
+  <member type="way" ref="157067302" role=""/>
+  <member type="way" ref="841383667" role=""/>
+  <member type="way" ref="27351337" role=""/>
+  <member type="way" ref="841383666" role=""/>
+  <member type="way" ref="25500486" role=""/>
+  <member type="way" ref="208823805" role=""/>
+  <member type="way" ref="208799092" role=""/>
+  <member type="way" ref="27351341" role=""/>
+  <member type="way" ref="162607730" role=""/>
+  <member type="way" ref="26463517" role=""/>
+  <member type="way" ref="162609519" role=""/>
+  <member type="way" ref="115750042" role=""/>
+  <member type="way" ref="26406300" role=""/>
+  <member type="way" ref="124711612" role=""/>
+  <member type="way" ref="40122529" role=""/>
+  <member type="way" ref="40122528" role=""/>
+  <member type="way" ref="120133830" role=""/>
+  <member type="way" ref="115750044" role=""/>
+  <member type="way" ref="180295190" role=""/>
+  <member type="way" ref="26406352" role=""/>
+  <member type="way" ref="115750050" role=""/>
+  <tag k="name" v="Ring III - Sengeløse"/>
+  <tag k="network" v="rcn"/>
+  <tag k="ref" v="57"/>
+  <tag k="route" v="bicycle"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="3079117" visible="true" version="2" changeset="131210462" timestamp="2023-01-13T01:51:34Z" user="Niels Elgaard Larsen" uid="1288">
+  <member type="node" ref="1644513875" role="to"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <member type="node" ref="2382207018" role="sign"/>
+  <tag k="colour:arrow" v="white"/>
+  <tag k="colour:back" v="blue"/>
+  <tag k="colour:text" v="white"/>
+  <tag k="destination" v="57"/>
+  <tag k="destination:ref" v="57"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3079120" visible="true" version="2" changeset="131210462" timestamp="2023-01-13T01:51:34Z" user="Niels Elgaard Larsen" uid="1288">
+  <member type="node" ref="1644513815" role="to"/>
+  <member type="node" ref="2382207017" role="sign"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <tag k="colour:arrow" v="white"/>
+  <tag k="colour:back" v="blue"/>
+  <tag k="colour:text" v="white"/>
+  <tag k="destination" v="57"/>
+  <tag k="destination:ref" v="57"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3079140" visible="true" version="3" changeset="127233128" timestamp="2022-10-09T06:58:48Z" user="kmpoppe (@ Mapillary Update)" uid="14309561">
+  <member type="way" ref="841383668" role="from"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <member type="way" ref="27351337" role="to"/>
+  <member type="node" ref="2382207018" role="sign"/>
+  <tag k="colour:arrow" v="red"/>
+  <tag k="colour:back" v="white"/>
+  <tag k="colour:text" v="red"/>
+  <tag k="destination" v="Herstedvester"/>
+  <tag k="destination:ref:to" v="O4"/>
+  <tag k="distance" v="1"/>
+  <tag k="mapillary" v="145333080860906"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3079143" visible="true" version="3" changeset="127767112" timestamp="2022-10-19T08:49:07Z" user="kmpoppe (@ Mapillary Update)" uid="14309561">
+  <member type="way" ref="841383666" role="from"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <member type="way" ref="27351337" role="to"/>
+  <member type="node" ref="2382207017" role="sign"/>
+  <tag k="colour:arrow" v="red"/>
+  <tag k="colour:back" v="white"/>
+  <tag k="colour:text" v="red"/>
+  <tag k="destination" v="Herstedvester"/>
+  <tag k="distance" v="1"/>
+  <tag k="mapillary" v="527111811632855"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3079144" visible="true" version="3" changeset="127645099" timestamp="2022-10-17T02:59:15Z" user="kmpoppe (@ Mapillary Update)" uid="14309561">
+  <member type="way" ref="27351337" role="from"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <member type="way" ref="841383668" role="to"/>
+  <member type="node" ref="2382207019" role="sign"/>
+  <tag k="colour:arrow" v="red"/>
+  <tag k="colour:back" v="white"/>
+  <tag k="colour:text" v="red"/>
+  <tag k="destination" v="Ledøje"/>
+  <tag k="distance" v="3"/>
+  <tag k="mapillary" v="472594960484517"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3079146" visible="true" version="3" changeset="127767112" timestamp="2022-10-19T08:49:07Z" user="kmpoppe (@ Mapillary Update)" uid="14309561">
+  <member type="way" ref="841383666" role="from"/>
+  <member type="node" ref="85585690" role="intersection"/>
+  <member type="way" ref="841383668" role="to"/>
+  <member type="node" ref="2382207017" role="sign"/>
+  <tag k="colour:arrow" v="red"/>
+  <tag k="colour:back" v="white"/>
+  <tag k="colour:text" v="red"/>
+  <tag k="destination" v="Ledøje"/>
+  <tag k="distance" v="3"/>
+  <tag k="mapillary" v="527111811632855"/>
+  <tag k="type" v="destination_sign"/>
+ </relation>
+ <relation id="3936488" visible="true" version="9" changeset="132844833" timestamp="2023-02-21T16:54:55Z" user="Niels Elgaard Larsen" uid="1288">
+  <member type="node" ref="8398307175" role="stop_entry_only"/>
+  <member type="node" ref="7911235765" role="stop"/>
+  <member type="node" ref="7911235763" role="platform"/>
+  <member type="way" ref="645425720" role=""/>
+  <member type="way" ref="627190320" role=""/>
+  <member type="way" ref="904296926" role=""/>
+  <member type="way" ref="215234148" role=""/>
+  <member type="way" ref="215234146" role=""/>
+  <member type="way" ref="237372604" role=""/>
+  <member type="way" ref="27323794" role=""/>
+  <member type="way" ref="908704490" role=""/>
+  <member type="way" ref="237372609" role=""/>
+  <member type="way" ref="26168827" role=""/>
+  <member type="way" ref="33917018" role=""/>
+  <member type="way" ref="28298102" role=""/>
+  <member type="way" ref="183159179" role=""/>
+  <member type="way" ref="687246689" role=""/>
+  <member type="way" ref="4089649" role=""/>
+  <member type="way" ref="904296925" role=""/>
+  <member type="way" ref="120131599" role=""/>
+  <member type="way" ref="120131859" role=""/>
+  <member type="way" ref="208799012" role=""/>
+  <member type="way" ref="302597424" role=""/>
+  <member type="way" ref="225927191" role=""/>
+  <member type="way" ref="225927193" role=""/>
+  <member type="way" ref="157091135" role=""/>
+  <member type="way" ref="115750052" role=""/>
+  <member type="way" ref="115750055" role=""/>
+  <member type="way" ref="189634455" role=""/>
+  <member type="way" ref="37949446" role=""/>
+  <member type="way" ref="124165825" role=""/>
+  <member type="way" ref="208799092" role=""/>
+  <member type="way" ref="208823805" role=""/>
+  <member type="way" ref="25500486" role=""/>
+  <member type="way" ref="841383666" role=""/>
+  <tag k="from" v="Ballerup St."/>
+  <tag k="name" v="Bus 143: Ballerup St. =&gt; Vallensbæk St."/>
+  <tag k="network" v="Takst Sjælland"/>
+  <tag k="network:bus" v="Movia"/>
+  <tag k="network:wikidata" v="Q3359392"/>
+  <tag k="operator" v="Movia"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="143"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="Vallensbæk St."/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="4441962" visible="true" version="88" changeset="134663091" timestamp="2023-04-08T18:04:00Z" user="oz1lln" uid="29479">
+  <member type="relation" ref="11563237" role=""/>
+  <member type="relation" ref="11561387" role=""/>
+  <member type="relation" ref="4442387" role=""/>
+  <member type="relation" ref="4442379" role=""/>
+  <member type="relation" ref="4442221" role=""/>
+  <member type="relation" ref="4442215" role=""/>
+  <member type="relation" ref="4442216" role=""/>
+  <member type="relation" ref="4442217" role=""/>
+  <member type="relation" ref="4442218" role=""/>
+  <member type="relation" ref="4442219" role=""/>
+  <member type="relation" ref="4442220" role=""/>
+  <member type="relation" ref="4441820" role=""/>
+  <member type="relation" ref="4441803" role=""/>
+  <member type="relation" ref="4441802" role=""/>
+  <member type="relation" ref="4441944" role=""/>
+  <member type="relation" ref="4441801" role=""/>
+  <member type="relation" ref="158359" role=""/>
+  <member type="relation" ref="11560096" role=""/>
+  <member type="relation" ref="11561167" role=""/>
+  <member type="relation" ref="11558729" role=""/>
+  <member type="relation" ref="12268445" role=""/>
+  <member type="relation" ref="12268569" role=""/>
+  <member type="relation" ref="12269615" role=""/>
+  <member type="relation" ref="12268087" role=""/>
+  <member type="relation" ref="12267920" role=""/>
+  <member type="relation" ref="12266857" role=""/>
+  <member type="relation" ref="12266674" role=""/>
+  <member type="relation" ref="12619501" role=""/>
+  <member type="relation" ref="12620132" role=""/>
+  <member type="relation" ref="12659067" role=""/>
+  <member type="relation" ref="12659075" role=""/>
+  <member type="relation" ref="12671374" role=""/>
+  <member type="relation" ref="12671838" role=""/>
+  <member type="relation" ref="12672060" role=""/>
+  <member type="relation" ref="12672241" role=""/>
+  <member type="relation" ref="12679450" role=""/>
+  <member type="relation" ref="12679893" role=""/>
+  <member type="relation" ref="12679894" role=""/>
+  <member type="relation" ref="12679895" role=""/>
+  <member type="relation" ref="12685308" role=""/>
+  <member type="relation" ref="12685307" role=""/>
+  <member type="relation" ref="12685309" role=""/>
+  <member type="relation" ref="12692387" role=""/>
+  <member type="relation" ref="12692119" role=""/>
+  <member type="relation" ref="12696924" role=""/>
+  <member type="relation" ref="12696761" role=""/>
+  <member type="relation" ref="12697341" role=""/>
+  <member type="relation" ref="12697342" role=""/>
+  <member type="relation" ref="12698229" role=""/>
+  <member type="relation" ref="12699746" role=""/>
+  <member type="relation" ref="12699849" role=""/>
+  <member type="relation" ref="12700286" role=""/>
+  <member type="relation" ref="12700287" role=""/>
+  <member type="relation" ref="12701109" role=""/>
+  <member type="relation" ref="12701110" role=""/>
+  <member type="relation" ref="13009841" role=""/>
+  <member type="relation" ref="13010185" role=""/>
+  <member type="relation" ref="13010407" role=""/>
+  <member type="relation" ref="13010888" role=""/>
+  <member type="relation" ref="13350548" role=""/>
+  <member type="relation" ref="13994973" role=""/>
+  <member type="relation" ref="15047013" role=""/>
+  <member type="relation" ref="15047217" role=""/>
+  <member type="relation" ref="15047926" role=""/>
+  <member type="relation" ref="15047927" role=""/>
+  <member type="relation" ref="15051238" role=""/>
+  <member type="relation" ref="15049392" role=""/>
+  <member type="relation" ref="15051338" role=""/>
+  <member type="relation" ref="15053443" role=""/>
+  <member type="relation" ref="15054079" role=""/>
+  <member type="relation" ref="15059397" role=""/>
+  <member type="relation" ref="15059852" role=""/>
+  <member type="relation" ref="15061614" role=""/>
+  <member type="relation" ref="15061903" role=""/>
+  <member type="relation" ref="15062267" role=""/>
+  <member type="relation" ref="15062302" role=""/>
+  <member type="relation" ref="15070653" role=""/>
+  <member type="relation" ref="15070783" role=""/>
+  <member type="relation" ref="15094452" role=""/>
+  <member type="relation" ref="15094506" role=""/>
+  <member type="relation" ref="15095122" role=""/>
+  <member type="relation" ref="15094745" role=""/>
+  <member type="relation" ref="15342693" role=""/>
+  <member type="relation" ref="15697427" role=""/>
+  <member type="relation" ref="15698204" role=""/>
+  <tag k="description" v="One of the most beautiful ways to see Denmark is to follow the route called “Margueritruten” (The route of the marguerite)."/>
+  <tag k="distance" v="4218 km"/>
+  <tag k="name" v="Margueritruten"/>
+  <tag k="name:da" v="Margueritruten"/>
+  <tag k="name:de" v="Margeritenroute"/>
+  <tag k="name:en" v="Marguerite route"/>
+  <tag k="note" v="super-relation for Margueritruten"/>
+  <tag k="symbol" v="Marguerite"/>
+  <tag k="type" v="superroute"/>
+  <tag k="website" v="https://naturstyrelsen.dk/naturoplevelser/naturguider/margueritruten/"/>
+  <tag k="wikidata" v="Q4580033"/>
+ </relation>
+ <relation id="8026706" visible="true" version="4" changeset="124613611" timestamp="2022-08-07T21:08:09Z" user="nimapper" uid="36080">
+  <member type="way" ref="25500468" role="outer"/>
+  <member type="way" ref="561777285" role="inner"/>
+  <member type="way" ref="778199106" role="outer"/>
+  <tag k="landuse" v="residential"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="15094506" visible="true" version="3" changeset="130979242" timestamp="2023-01-07T12:29:05Z" user="oz1lln" uid="29479">
+  <member type="way" ref="847803006" role=""/>
+  <member type="way" ref="12618247" role=""/>
+  <member type="way" ref="295982177" role=""/>
+  <member type="way" ref="162607723" role=""/>
+  <member type="way" ref="162607721" role=""/>
+  <member type="way" ref="841383668" role=""/>
+  <member type="way" ref="27351337" role=""/>
+  <member type="way" ref="841383667" role=""/>
+  <member type="way" ref="683255341" role=""/>
+  <member type="way" ref="27351338" role=""/>
+  <member type="way" ref="683255342" role=""/>
+  <member type="way" ref="683255344" role=""/>
+  <member type="way" ref="1103311405" role=""/>
+  <member type="way" ref="297478223" role=""/>
+  <member type="way" ref="1103311406" role=""/>
+  <member type="way" ref="297478228" role=""/>
+  <member type="way" ref="297478227" role=""/>
+  <member type="way" ref="1103311410" role=""/>
+  <member type="way" ref="1103311411" role=""/>
+  <member type="way" ref="297478226" role=""/>
+  <member type="way" ref="297478224" role=""/>
+  <member type="way" ref="1103311404" role=""/>
+  <member type="way" ref="1103311407" role=""/>
+  <member type="way" ref="12618246" role=""/>
+  <member type="way" ref="37948971" role=""/>
+  <member type="way" ref="10262849" role=""/>
+  <member type="way" ref="10262848" role=""/>
+  <member type="way" ref="205603014" role=""/>
+  <member type="way" ref="297478225" role=""/>
+  <member type="way" ref="1103311412" role=""/>
+  <member type="way" ref="1103266444" role=""/>
+  <member type="way" ref="1103266442" role=""/>
+  <member type="way" ref="1103266443" role=""/>
+  <member type="way" ref="683255347" role=""/>
+  <member type="way" ref="207283076" role=""/>
+  <member type="way" ref="683255345" role=""/>
+  <member type="way" ref="148679039" role=""/>
+  <member type="way" ref="960137696" role=""/>
+  <member type="way" ref="155661935" role=""/>
+  <tag k="description" v="One of the most beautiful ways to see Denmark is to follow the route called “Margueritruten” (The route of the marguerite)."/>
+  <tag k="name" v="Margueritruten (Albertslund kommune)"/>
+  <tag k="route" v="road"/>
+  <tag k="symbol" v="Marguerite"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

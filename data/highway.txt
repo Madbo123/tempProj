@@ -1,0 +1,149 @@
+motorway
+130
+car
+0.89 0.48 0.56
+5
+
+trunk
+80
+car
+0.98 0.7 0.61
+5
+
+primary
+80
+car bicycle feet
+0.99 0.81 0.56
+5
+
+secondary
+50
+car bicycle feet
+0.96 0.98 0.68
+5
+
+tertiary
+50
+car bicycle feet
+1 1 1
+5
+
+unclassified
+80
+car bicycle feet
+1 1 1
+5
+
+residential
+50
+car bicycle feet
+1 1 1
+4
+
+motorway_link
+130
+car
+0.89 0.48 0.56
+3
+
+trunk_link
+80
+car
+0.98 0.7 0.61
+2
+
+primary_link
+80
+car bicycle feet
+0.99 0.81 0.56
+1
+
+secondary_link
+50
+car bicycle feet
+0.96 0.98 0.68
+1
+
+tertiary_link
+50
+car bicycle feet
+1 1 1
+1
+
+living_street
+50
+car bicycle feet
+0.91 0.91 0.91
+1
+
+service
+50
+car bicycle feet
+1 1 1
+1
+
+pedestrian
+50
+bicycle feet
+0.84 0.83 0.89
+1
+
+track
+50
+car bicycle feet
+0.61 0.44 0.12
+1
+
+escape
+130
+car
+1 1 1
+1
+
+raceway
+1233
+car
+1 0.75 0.79
+1
+
+road
+50
+car bicycle feet
+0.84 0.84 0.84
+1
+
+footway
+50
+bicycle feet
+0.98 0.5 0.45
+1
+
+bridleway
+50
+bicycle feet
+0.08 0.54 0.08
+1
+
+steps
+50
+feet
+0.98 0.41 0.36
+1
+
+path
+50
+bicycle feet
+0.98 0.5 0.45
+1
+
+cycleway
+50
+bicycle feet
+0.09 0.09 1
+1
+
+parking
+50
+car bicycle feet
+1 1 1
+1
