@@ -17,8 +17,6 @@ public class Relation extends Waypoint implements Serializable, Comparable<Relat
 
     List<Node> nodeMembers = new ArrayList<>();
 
-    String test_var = "Inderhavnen";
-
     List<Way> sortedOuters = new ArrayList<>();
 
     List<Way> sortedInners = new ArrayList<>();
@@ -107,14 +105,10 @@ public class Relation extends Waypoint implements Serializable, Comparable<Relat
         return false;
     }
 
-
-
-
     //Afliv mig
     private void waySorter(List<Way> unsortedOuters) {
         ArrayList<Node> sortedNodes = new ArrayList<>();
         ArrayList<ArrayList<Node>> unsortedNodes = new ArrayList<>();
-
 
         for (Way way : unsortedOuters) {
             if (!unsortedNodes.isEmpty() && breakpointFinder(unsortedOuters, way)) {
@@ -127,12 +121,9 @@ public class Relation extends Waypoint implements Serializable, Comparable<Relat
             }
         }
 
-
-
         while (!unsortedNodes.isEmpty()) {
             nodeSorter(sortedNodes, unsortedNodes);
         }
-
 
         sortedOuters.add(new Way(sortedNodes, tags));
     }
@@ -263,9 +254,6 @@ public class Relation extends Waypoint implements Serializable, Comparable<Relat
             way.draw(gc);
         }
     }
-
-
-
 
     public List<Node> getNodeMembers() {
         return nodeMembers;

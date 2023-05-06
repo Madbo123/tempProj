@@ -1,5 +1,6 @@
 package com.mapper.map.bfst_map.Controller.GUI;
 
+import com.mapper.map.bfst_map.Controller.Dijkstra.DijkstraController;
 import com.mapper.map.bfst_map.Model.Elements.Model;
 import com.mapper.map.bfst_map.Utils.FXAnims;
 import com.mapper.map.bfst_map.Utils.Highway;
@@ -9,10 +10,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -35,13 +38,13 @@ public class MapController {
     @FXML
     public AnchorPane mapMainAnchor, mapUIAnchor, mapCanvasAnchor;
     @FXML
-    private Pane debugMenuBar, menuBar, toggleUIButton, toggleThemeButton, debugMenuButton, menuButton, hoverInfoPane, lengthIndicatorPane, closedEyeImage, searchPane;
+    private Pane debugMenuBar, menuBar, toggleUIButton, toggleThemeButton, debugMenuButton, menuButton, hoverInfoPane, lengthIndicatorPane, closedEyeImage, searchPane, destinationPane, toggleDijkstraButton;
     @FXML
     private HBox debugMenuBarHBox;
     @FXML
-    private VBox searchSuggestionBox;
+    private VBox searchSuggestionBox, destinationSuggestionBox;
     @FXML
-    private TextField searchBar, searchS1, searchS2, searchS3, searchS4, searchS5;
+    private TextField searchBar, searchS1, searchS2, searchS3, searchS4, searchS5, destinationBar, destS1, destS2, destS3, destS4, destS5;
     @FXML
     private ImageView openEyeImage;
     @FXML
@@ -66,12 +69,6 @@ public class MapController {
 
 
     public void initialize() {
-        filename = MenuController.getFilename();
-
-        DrawController.initColorMap();
-
-        Highway.loadData();
-
         initAll();
     }
 
@@ -92,6 +89,7 @@ public class MapController {
             fadeNodeOut(menuButton);
             fadeNodeOut(debugMenuBarHBox);
             fadeNodeOut(searchPane);
+            fadeNodeOut(destinationPane);
             fadeNodeOut(hoverInfoPane);
             fadeNodeOut(lengthIndicatorPane);
             fadeNodeOut(toggleThemeButton);
@@ -103,6 +101,7 @@ public class MapController {
             fadeNodeIn(menuButton);
             fadeNodeIn(debugMenuBarHBox);
             fadeNodeIn(searchPane);
+            fadeNodeIn(destinationPane);
             fadeNodeIn(hoverInfoPane);
             fadeNodeIn(lengthIndicatorPane);
             fadeNodeIn(toggleThemeButton);
@@ -120,8 +119,20 @@ public class MapController {
 
 
 
-    private Iterable<String> getSuggestions() {
-        return Model.addressTST.keysWithPrefix(searchBar.getText(), 5);
+    public void toggleDijkstra() {
+        if (destinationPane.isDisabled()) {
+            rotateNode(toggleDijkstraButton, 0.2, 180);
+            translateNode(destinationPane, 0.25, 440, 0);
+            fadeNodeIn(destinationPane);
+        } else {
+            rotateNode(toggleDijkstraButton, 0.2, 180);
+            translateNode(destinationPane, 0.25, -440, 0);
+            fadeNodeOut(destinationPane);
+        }
+    }
+
+    private Iterable<String> getSuggestions(TextField barObject) {
+        return Model.addressTST.keysWithPrefix(barObject.getText(), 5);
     }
 
     public void searchSuggestionInputChanged(KeyEvent event) {
@@ -137,7 +148,7 @@ public class MapController {
         if (hasText) {
             //Iterate through suggestions and fill out boxes. This can be implemented better by automatically generating the suggestion-boxes.
             int i = 0;
-            for (String suggestion : getSuggestions()) {
+            for (String suggestion : getSuggestions(searchBar)) {
                 if (i > 4) {
                     //Throws error if amount of suggestions somehow surpasses 5
                     throw new ArrayIndexOutOfBoundsException("More than five suggestions were generated during search");
@@ -172,6 +183,84 @@ public class MapController {
     }
 
 
+    //Copy paste salad, fikser det senereTM
+
+    public void destinationSuggestionInputChanged(KeyEvent event) {
+
+        //Inverted isEmpty() method call.
+        boolean hasText = !destinationBar.getText().isEmpty();
+        List<TextField> suggestionFields = List.of(destS1, destS2, destS3, destS4, destS5);
+        destinationSuggestionToggle();
+
+        for (TextField field : suggestionFields) {
+            field.setText("");
+        }
+
+        if (hasText) {
+            //Iterate through suggestions and fill out boxes. This can be implemented better by automatically generating the suggestion-boxes.
+            int i = 0;
+            for (String suggestion : getSuggestions(destinationBar)) {
+                if (i > 4) {
+                    //Throws error if amount of suggestions somehow surpasses 5
+                    throw new ArrayIndexOutOfBoundsException("More than five suggestions were generated during search");
+                } else {
+                    //Sets suggestions by index
+                    suggestionFields.get(i).setText(suggestion);
+                    i++;
+                }
+            }
+        } else {
+            //Disables suggestions if there are none.
+            disableNode(destinationSuggestionBox);
+        }
+    }
+
+    public void destinationSuggestionToggle() {
+        if (destinationBar.isFocused() && destinationSuggestionBox.isDisabled() && !destinationBar.getText().isEmpty()) {
+            enableNode(destinationSuggestionBox);
+        } else if (destinationBar.getText().isEmpty()) {
+            disableNode(destinationSuggestionBox);
+        }
+    }
+
+    public void destinationSuggestionFill(MouseEvent event) {
+        try {
+            TextField selectedSuggestion = (TextField) event.getSource();
+            destinationBar.setText(selectedSuggestion.getText());
+            disableNode(destinationSuggestionBox);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    //HEJ PATRICK, DET HER ER DIJKSTRA KNAP METODEN
+    public void getPath(KeyEvent e) {
+        if (e.getCode() == KeyCode.ENTER) {
+            removeFocus(); //Removing the dropdown by manipulating focus
+
+            if ((!searchBar.getText().isEmpty() | !destinationBar.getText().isEmpty()) && !destinationBar.isDisabled()) {
+                String source = searchBar.getText();
+                String target = destinationBar.getText();
+                String transportType = "car"; //Get transport type here. Placeholder is "car"
+
+                //BUG HER =====================================================================================================================
+                //Hvis denne kaldes med specifikke addresser, opstår en invocationexception. Waypoint types kan vidst ikke castes til roads atm.
+                Model.dijkstraController.calculateShortestPath(source, target, transportType);
+            } else {
+                throw new RuntimeException("Tried to search with empty/null textfield");
+            }
+        }
+    }
+
+    public void removeFocus() {
+        //Remove focus from any given element by setting the focus to be the entire UI anchor.
+        mapUIAnchor.requestFocus();
+    }
+
+
+
+
 
     public void timedRedraws(int count) {
         double timeStart = System.currentTimeMillis();
@@ -184,12 +273,16 @@ public class MapController {
     }
 
     public void testTimedRedraws() {
-        timedRedraws(20);
+        timedRedraws(60);
     }
 
 
 
     private void initAll() {
+        filename = MenuController.getFilename();
+        DrawController.initColorMap();
+        Highway.loadData();
+
         initModel();
         initCanvas();
         initView();
@@ -244,6 +337,7 @@ public class MapController {
         setHoverDim(toggleThemeButton);
         setHoverDim(debugMenuButton);
         setHoverDim(menuButton);
+        setHoverDim(toggleDijkstraButton);
         setHoverDim(testButton1);
         setHoverDim(testButton2);
         setHoverDim(testButton3);
@@ -254,25 +348,59 @@ public class MapController {
         setHoverDim(testButton8);
     }
 
+    //Below two methods should only be called externally after the map has initialized.
 
+    private void initSBoxListeners() {
+        //Listeners could be generated from a template via method as they exist currently, but this way allows for diversification of behaviour
 
+        //These listeners disable suggestion boxes if the focus is moved from the search bars. A delay of 100ms is used to allow for execution of various minor methods
+        //Timer threads are used to prevent drift, threads are daemon to allow for impartial termination of thread.
+        try {
+            final ChangeListener<Boolean> focusChangedListener1 = (observable, oldValue, newValue) -> {
+                if (!newValue) {
+                    new java.util.Timer(true).schedule(new java.util.TimerTask() {
+                       @Override
+                       public void run() {
+                           disableNode(searchSuggestionBox);
+                       }
+                    },
+                    100
+                    );
+                } else {
+                    if (searchSuggestionBox.isDisabled() && !searchBar.getText().isEmpty()) {
+                        enableNode(searchSuggestionBox);
+                    }
+                }
+            };
 
+            searchBar.focusedProperty().addListener(focusChangedListener1);
 
+            final ChangeListener<Boolean> focusChangedListener2 = (observable, oldValue, newValue) -> {
+                if (!newValue) {
+                    new java.util.Timer(true).schedule(new java.util.TimerTask() {
+                        @Override
+                        public void run() {
+                            disableNode(destinationSuggestionBox);
+                        }
+                    },
+                    100
+                    );
 
-    //Resize method.
-    private void resizeScene(double prefWidth, double prefHeight) {
-        mapMainAnchor.setPrefSize(prefWidth, prefHeight);
-        mapUIAnchor.setPrefSize(prefWidth, prefHeight);
-        mapCanvasAnchor.setPrefSize(prefWidth, prefHeight);
-        canvas.setWidth(prefWidth);
-        canvas.setHeight(prefHeight);
-        canvasController.redraw();
+                } else {
+                    if (destinationSuggestionBox.isDisabled() && !destinationBar.getText().isEmpty()) {
+                        enableNode(destinationSuggestionBox);
+                    }
+                }
+            };
+
+            destinationBar.focusedProperty().addListener(focusChangedListener2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    public void stageSetup() {
+    private void initResizeListener() {
         final Stage primaryStage = getPrimaryStage();
-
-
         //Basic ChangeListener for resizing.
         final ChangeListener<Number> resizeListener = new ChangeListener<>() {
 
@@ -306,6 +434,27 @@ public class MapController {
         primaryStage.widthProperty().addListener(resizeListener);
         primaryStage.heightProperty().addListener(resizeListener);
     }
+
+
+
+
+
+    //Resize method.
+    private void resizeScene(double prefWidth, double prefHeight) {
+        mapMainAnchor.setPrefSize(prefWidth, prefHeight);
+        mapUIAnchor.setPrefSize(prefWidth, prefHeight);
+        mapCanvasAnchor.setPrefSize(prefWidth, prefHeight);
+        canvas.setWidth(prefWidth);
+        canvas.setHeight(prefHeight);
+        canvasController.redraw();
+    }
+
+    public void stageSetup() {
+        initResizeListener();
+        initSBoxListeners();
+    }
+
+
 
 
     private Stage getPrimaryStage() {

@@ -1,7 +1,6 @@
 package com.mapper.map.bfst_map.Model.Elements;
 
 import com.mapper.map.bfst_map.Controller.AddressSearcher.RadixTree;
-import com.mapper.map.bfst_map.Controller.AddressSearcher.TernarySearchTree;
 import com.mapper.map.bfst_map.Controller.Dijkstra.*;
 import com.mapper.map.bfst_map.Controller.RTree.RTreeController;
 import com.mapper.map.bfst_map.Model.Dijkstra.EarlyRoad;
@@ -20,7 +19,7 @@ public class Model implements Serializable {
     public static List<Relation> relations = new ArrayList<>();
     public static List<Way> taggedWays = new ArrayList<>();
     public static DijkstraController dijkstraController;
-    public static TernarySearchTree<Waypoint> addressTST = new TernarySearchTree<>();
+    public static RadixTree<Waypoint> addressTST = new RadixTree<>();
     public static RTreeController rTreeController;
     double minLat, maxLat, minLon, maxLon;
     float lat, lon = 0;
@@ -59,6 +58,18 @@ public class Model implements Serializable {
 
     private void parseOSM(String filename) throws FileNotFoundException, XMLStreamException, FactoryConfigurationError {
         parseOSM(new FileInputStream(filename));
+    }
+
+
+    private void prototypeParseCoords(XMLStreamReader input) {
+        Set<Node> nodeSet = new HashSet<>();
+
+        //Ny node med id koblet
+        //nodeSet.add(node);
+
+        //måske hashtable...
+
+        //eller kan vi slippe afsted med et associativt array?
     }
 
 
@@ -125,7 +136,6 @@ public class Model implements Serializable {
                         } else {
                             Way tempWay = new Way(wayList, wayTags);
 
-                            tempWay.assignID(way_id);
                             id2way.put(way_id, tempWay);
                         }
                         way_id = 0;
@@ -161,7 +171,7 @@ public class Model implements Serializable {
         rTreeController = new RTreeController(ways, relations, dijkstraController.getRoads());
 
         try {
-            dijkstraController.calculateShortestPath("Nytorv", "Paduavej", "car");
+            dijkstraController.calculateShortestPath("Nordvangen", "Rævehøjen", "car");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -169,6 +179,8 @@ public class Model implements Serializable {
         for (Way way : ways) {
             way.clearWayNodes();
         }
+
+        ways.removeAll(taggedWays);
 
         for (Relation relation : relations) {
             relation.clearNodeMembers();

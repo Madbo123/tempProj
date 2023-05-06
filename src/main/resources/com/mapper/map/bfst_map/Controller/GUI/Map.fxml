@@ -22,7 +22,7 @@
 <AnchorPane fx:id="mapMainAnchor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mapper.map.bfst_map.Controller.GUI.MapController">
    <children>
       <AnchorPane fx:id="mapCanvasAnchor" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #D0D5D0FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane fx:id="mapUIAnchor" pickOnBounds="false" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../../../../../../GUIAssets/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="mapUIAnchor" onMouseClicked="#removeFocus" pickOnBounds="false" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../../../../../../GUIAssets/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Pane layoutX="1100.0" prefHeight="100.0" prefWidth="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -238,6 +238,175 @@
                   </Text>
                </children>
             </Pane>
+            <Pane fx:id="destinationPane" disable="true" layoutY="25.0" pickOnBounds="false" prefHeight="400.0" prefWidth="300.0" visible="false" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <VBox fx:id="destinationSuggestionBox" layoutY="42.0" pickOnBounds="false" prefHeight="205.0" prefWidth="300.0" style="-fx-background-color: #919191;" visible="false">
+                     <children>
+                        <HBox pickOnBounds="false" styleClass="searchSuggestionBar">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../GUIAssets/houseIconAsset.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="destS1" editable="false" focusTraversable="false" onMouseClicked="#destinationSuggestionFill" pickOnBounds="false" prefHeight="40.0" prefWidth="325.0" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 5;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" styleClass="searchSuggestionBar">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../GUIAssets/houseIconAsset.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="destS2" editable="false" focusTraversable="false" onMouseClicked="#destinationSuggestionFill" pickOnBounds="false" prefHeight="40.0" prefWidth="325.0" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 5;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="50.0" styleClass="searchSuggestionBar">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../GUIAssets/houseIconAsset.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="destS3" editable="false" focusTraversable="false" onMouseClicked="#destinationSuggestionFill" pickOnBounds="false" prefHeight="40.0" prefWidth="325.0" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 5;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="90.0" styleClass="searchSuggestionBar">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../GUIAssets/houseIconAsset.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="destS4" editable="false" focusTraversable="false" onMouseClicked="#destinationSuggestionFill" pickOnBounds="false" prefHeight="40.0" prefWidth="325.0" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 5;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="130.0" styleClass="searchSuggestionBar">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../GUIAssets/houseIconAsset.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="destS5" editable="false" focusTraversable="false" onMouseClicked="#destinationSuggestionFill" pickOnBounds="false" prefHeight="40.0" prefWidth="325.0" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 5;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <InnerShadow choke="0.1" height="94.28" offsetY="10.0" radius="23.07" width="0.0">
+                           <color>
+                              <Color opacity="0.25190839171409607" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+                  <TextField fx:id="destinationBar" focusTraversable="false" onKeyPressed="#getPath" onKeyTyped="#destinationSuggestionInputChanged" onMouseClicked="#destinationSuggestionToggle" prefHeight="45.0" prefWidth="300.0" promptText="Search Destination" style="-fx-background-radius: 4; -fx-background-color: #919191; -fx-text-fill: BLACK; -fx-prompt-text-fill: #353535;">
+                     <effect>
+                        <DropShadow height="18.06" radius="8.53" spread="0.1" width="18.06">
+                           <color>
+                              <Color opacity="0.7022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
             <Pane fx:id="searchPane" layoutX="381.0" layoutY="168.0" pickOnBounds="false" prefHeight="400.0" prefWidth="350.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0">
                <children>
                   <VBox fx:id="searchSuggestionBox" layoutY="42.0" pickOnBounds="false" prefHeight="205.0" prefWidth="350.0" style="-fx-background-color: #919191;" visible="false">
@@ -384,7 +553,7 @@
                         <Insets top="5.0" />
                      </padding>
                   </VBox>
-                  <TextField fx:id="searchBar" focusTraversable="false" onKeyTyped="#searchSuggestionInputChanged" onMouseClicked="#searchSuggestionToggle" prefHeight="45.0" prefWidth="350.0" promptText="Search Address" style="-fx-background-radius: 4; -fx-background-color: #919191; -fx-text-fill: BLACK; -fx-prompt-text-fill: #353535;">
+                  <TextField fx:id="searchBar" focusTraversable="false" onKeyPressed="#getPath" onKeyTyped="#searchSuggestionInputChanged" onMouseClicked="#searchSuggestionToggle" prefHeight="45.0" prefWidth="350.0" promptText="Search Address" style="-fx-background-radius: 4; -fx-background-color: #919191; -fx-text-fill: BLACK; -fx-prompt-text-fill: #353535;">
                      <effect>
                         <DropShadow height="18.06" radius="8.53" spread="0.1" width="18.06">
                            <color>
@@ -393,7 +562,7 @@
                         </DropShadow>
                      </effect>
                      <font>
-                        <Font name="Calibri" size="20.0" />
+                        <Font name="Calibri" size="18.0" />
                      </font>
                      <opaqueInsets>
                         <Insets />
@@ -402,9 +571,23 @@
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                      <padding>
-                        <Insets bottom="5.0" left="43.0" />
+                        <Insets bottom="5.0" left="43.0" right="43.0" />
                      </padding>
                   </TextField>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="10.0" layoutY="10.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../GUIAssets/searchiconasset.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="toggleDijkstraButton" layoutX="306.0" layoutY="5.0" onMouseClicked="#toggleDijkstra" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #919191; -fx-background-radius: 4;">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../GUIAssets/routearrowiconasset.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
          </children>

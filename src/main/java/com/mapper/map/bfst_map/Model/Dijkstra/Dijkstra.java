@@ -100,7 +100,7 @@ public class Dijkstra {
     //Return whether there has been found a path to the target vertex.
     public boolean hasPath() {
         if (target == -1) {
-            throw new NoSuchElementException("No calculated path.");
+            return false;
         }
 
         return weightTo[target] < Double.POSITIVE_INFINITY;
@@ -122,15 +122,6 @@ public class Dijkstra {
         }
 
         return path;
-    }
-
-    //Return the weight to the target vertex.
-    public double getWeight() {
-        if (target == -1) {
-            throw new NoSuchElementException("No calculated path.");
-        }
-
-        return weightTo[target];
     }
 
     //Return the distance to the target vertex.

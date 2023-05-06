@@ -1,49 +1,49 @@
 package com.mapper.map.bfst_map.Model.RTree;
 
 public class Bounds {
-    private double minX;
-    private double minY;
-    private double maxX;
-    private double maxY;
+    private float minX;
+    private float minY;
+    private float maxX;
+    private float maxY;
 
     public Bounds() {}
 
-    public Bounds(double minX, double maxX, double minY, double maxY) {
+    public Bounds(float minX, float maxX, float minY, float maxY) {
         this.minX = minX;
         this.maxX = maxX;
         this.minY = minY;
         this.maxY = maxY;
     }
 
-    public double getMinX() {
+    public float getMinX() {
         return minX;
     }
 
-    public void setMinX(double minX) {
+    public void setMinX(float minX) {
         this.minX = minX;
     }
 
-    public double getMinY() {
+    public float getMinY() {
         return minY;
     }
 
-    public void setMinY(double minY) {
+    public void setMinY(float minY) {
         this.minY = minY;
     }
 
-    public double getMaxX() {
+    public float getMaxX() {
         return maxX;
     }
 
-    public void setMaxX(double maxX) {
+    public void setMaxX(float maxX) {
         this.maxX = maxX;
     }
 
-    public double getMaxY() {
+    public float getMaxY() {
         return maxY;
     }
 
-    public void setMaxY(double maxY) {
+    public void setMaxY(float maxY) {
         this.maxY = maxY;
     }
 
@@ -54,10 +54,6 @@ public class Bounds {
         }
 
         // If one rectangle is above other
-        if (minY > other.getMaxY() || other.getMinY() > maxY) {
-            return false;
-        }
-
-        return true;
+        return !(minY > other.getMaxY()) && !(other.getMinY() > maxY);
     }
 }

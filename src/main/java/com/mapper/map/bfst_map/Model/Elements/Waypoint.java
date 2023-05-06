@@ -1,7 +1,5 @@
 package com.mapper.map.bfst_map.Model.Elements;
 
-import com.mapper.map.bfst_map.Model.RTree.HasBoundingBox;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +7,7 @@ import java.util.NoSuchElementException;
 
 public class Waypoint implements Serializable {
     public String address;
-    public String type;
-
     protected String streetName, streetNumber, postCode, city, country;
-
     protected Map<String, String> tags;
 
     //Approx center coords for camera movement
@@ -40,13 +35,6 @@ public class Waypoint implements Serializable {
         }
     }
 
-    private void duplicateAddressCheck() {
-        if (true) {
-            //Get object via address, rename both by adding postcode, city, country etc until they aren't a duplicate. Reinsert into set.
-            return;
-        }
-    }
-
     public Map<String, String> getTags() {
         return tags;
     }
@@ -57,10 +45,6 @@ public class Waypoint implements Serializable {
 
     public float[] getCenter() {
         return center;
-    }
-
-    protected void setAddress() {
-        //Tom for nu, denne skal ændre address og tilsvarende private fields
     }
 
     protected void updateAddr(String fieldName, String newString) {

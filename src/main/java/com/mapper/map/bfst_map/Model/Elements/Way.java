@@ -13,26 +13,14 @@ import static com.mapper.map.bfst_map.Controller.GUI.DrawController.fillElement;
 
 public class Way extends Waypoint implements Serializable, HasBoundingBox {
     public float[] coords;
-
-    long way_id;
-
     private String assignedColor = "unassigned";
     private ArrayList<Node> wayNodes;
-
-
-    public int prio = 1;
-
-
     Bounds boundingBox;
 
 
     public Way(ArrayList<Node> wayNodes, HashMap<String, String> tags) {
         super(tags);
         this.wayNodes = new ArrayList<>(wayNodes);
-
-
-
-
 
         coords = new float[wayNodes.size() * 2];
 
@@ -42,30 +30,18 @@ public class Way extends Waypoint implements Serializable, HasBoundingBox {
             coords[2 * i + 1] = node.getY();
         }
 
-        double minX = Double.POSITIVE_INFINITY;
-        double maxX = Double.NEGATIVE_INFINITY;
-        double minY = Double.POSITIVE_INFINITY;
-        double maxY = Double.NEGATIVE_INFINITY;
+        float minX = Float.POSITIVE_INFINITY, minY = Float.POSITIVE_INFINITY;
+        float maxX = Float.NEGATIVE_INFINITY, maxY = Float.NEGATIVE_INFINITY;
 
         for (int i = 0; i < coords.length; i += 2) {
-            double x = coords[i];
-            double y = coords[i + 1];
+            float x = coords[i];
+            float y = coords[i + 1];
 
-            if (x < minX) {
-                minX = x;
-            }
+            minX = Math.min(minX, x);
+            minY = Math.min(minY, y);
 
-            if (x > maxX) {
-                maxX = x;
-            }
-
-            if (y < minY) {
-                minY = y;
-            }
-
-            if (y > maxY) {
-                maxY = y;
-            }
+            maxX = Math.max(maxX, x);
+            maxY = Math.max(maxY, y);
         }
 
         boundingBox = new Bounds(minX, maxX, minY, maxY);
@@ -82,13 +58,6 @@ public class Way extends Waypoint implements Serializable, HasBoundingBox {
         }
 
         fillElement(this, gc);
-    }
-
-
-
-
-    public void assignID(long way_id) {
-        this.way_id = way_id;
     }
 
     public void assignColor(String colorName) {

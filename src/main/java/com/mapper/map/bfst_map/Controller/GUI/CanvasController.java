@@ -1,16 +1,11 @@
 package com.mapper.map.bfst_map.Controller.GUI;
 
-import com.mapper.map.bfst_map.Model.Dijkstra.Road;
 import com.mapper.map.bfst_map.Model.Elements.Model;
-import com.mapper.map.bfst_map.Model.Elements.Relation;
 import com.mapper.map.bfst_map.Model.Elements.Way;
 import com.mapper.map.bfst_map.Model.RTree.Bounds;
 import com.mapper.map.bfst_map.Model.Elements.Waypoint;
-import com.mapper.map.bfst_map.Model.RTree.HasBoundingBox;
-import com.mapper.map.bfst_map.Utils.Highway;
 import com.mapper.map.bfst_map.Utils.Utilities;
 import javafx.fxml.FXML;
-import javafx.geometry.BoundingBox;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -25,13 +20,10 @@ import java.util.List;
 import static com.mapper.map.bfst_map.Controller.GUI.MapController.model;
 
 public class CanvasController {
-
     //Controller for the canvas - MB
-
     @FXML
     private Canvas mapCanvas;
     double lastX, lastY;
-
     protected MapController mapController = null;
 
     GraphicsContext gc;
@@ -50,6 +42,7 @@ public class CanvasController {
         mapCanvas.setOnMousePressed(e -> {
             lastX = e.getX();
             lastY = e.getY();
+            mapController.removeFocus();
         });
 
         mapCanvas.setOnMouseDragged(e -> {
@@ -82,6 +75,7 @@ public class CanvasController {
         trans.prependTranslation(0, 0);
     }
 
+
     public void redraw() {
         gc.setTransform(new Affine());
         gc.setStroke(Color.BLACK);
@@ -91,24 +85,31 @@ public class CanvasController {
         gc.setLineWidth(1 / Math.sqrt(trans.determinant()));
 
         // Draw R-tree
-        Point2D upperLeftCorner = mouseToModel(0, 0);
-        Point2D upperRightCorner = mouseToModel(mapCanvas.getWidth(), 0);
-        Point2D lowerRightCorner = mouseToModel(mapCanvas.getWidth(), mapCanvas.getHeight());
-        Point2D lowerLeftCorner = mouseToModel(0, mapCanvas.getHeight());
-        Bounds searchBounds = new Bounds(lowerLeftCorner.getX(), upperRightCorner.getX(), upperLeftCorner.getY(), lowerRightCorner.getY());
-        Model.rTreeController.draw(gc, trans, searchBounds, 0.0);
+        int drawOffset = 200;
+        Point2D upperLeftCorner = mouseToModel(drawOffset, drawOffset);
+        Point2D upperRightCorner = mouseToModel(mapCanvas.getWidth() - drawOffset, drawOffset);
+        Point2D lowerRightCorner = mouseToModel(mapCanvas.getWidth() - drawOffset, mapCanvas.getHeight() - drawOffset);
+        Point2D lowerLeftCorner = mouseToModel(drawOffset, mapCanvas.getHeight() - drawOffset);
+        Bounds searchBounds = new Bounds((float) lowerLeftCorner.getX(), (float) upperRightCorner.getX(), (float) upperLeftCorner.getY(), (float) lowerRightCorner.getY());
+
+        Model.rTreeController.draw(gc, trans, searchBounds, trans.determinant());
 
         // Draw path
         gc.setStroke(Color.BLUE);
         gc.setLineWidth(3/Math.sqrt(trans.determinant()));
         Model.dijkstraController.drawPath(gc);
 
+        double x = searchBounds.getMinX();
+        double y = searchBounds.getMinY();
+        double w = searchBounds.getMaxX() - searchBounds.getMinX();
+        double h = searchBounds.getMaxY() - searchBounds.getMinY();
+        gc.setStroke(Color.RED);
+        gc.strokeRect(x, y, w, h);
+
         //Burde IKKE gøres sådan her, det skal bare lige testes og er nemt således.
 
-        /*
+/*
         List<Way> drawnWays = new ArrayList<>(model.getTaggedWays());
-
-
 
         for (Relation relation : model.getRelations()) {
             relation.draw(gc);
@@ -136,28 +137,7 @@ public class CanvasController {
                 drawnWays.add(way);
             }
         }
-
-
-        Model.dijkstraController.drawRoads(trans);
-
-        gc.setStroke(Color.BEIGE);
-        double bigHighway = 4/Math.sqrt(trans.determinant());
-        double smallHighway = 2/Math.sqrt(trans.determinant());
-
-        for (Way way : retrievedWays) {
-            if (!drawnWays.contains(way)) {
-                if (way.getTags().get("highway").equals("tertiary")) {
-                    gc.setLineWidth(bigHighway);
-                    way.draw(gc);
-                    drawnWays.add(way);
-                } else if (!way.containsTag("pedestrian")) {
-                    gc.setLineWidth(smallHighway);
-                    way.draw(gc);
-                    drawnWays.add(way);
-                }
-            }
-        }
-         */
+*/
     }
 
     void pan(double dx, double dy) {
@@ -192,7 +172,7 @@ public class CanvasController {
                 double pointDistance = Utilities.distance(x, way.coords[i], y, way.coords[i + 1]);
                 if (pointDistance < closest) {
                     closest = pointDistance;
-                    //closestElement = way;
+                    closestElement = way;
                 }
             }
         }

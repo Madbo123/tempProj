@@ -13,7 +13,7 @@ public class RTree implements HasBoundingBox {
     private RTree rightBranch;
 
     public RTree(List<HasBoundingBox> mapElements, boolean sortByX, Bounds parentBounds) {
-        boundingBox = new Bounds(Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY);
+        boundingBox = new Bounds(Float.POSITIVE_INFINITY, Float.NEGATIVE_INFINITY, Float.POSITIVE_INFINITY, Float.NEGATIVE_INFINITY);
 
         if(mapElements.size() > 5){
             List<HasBoundingBox> branch;
@@ -90,10 +90,10 @@ public class RTree implements HasBoundingBox {
     private void resizeBoundingBox(HasBoundingBox element) {
         Bounds bounds = element.getBoundingBox();
 
-        double elementMinX = bounds.getMinX();
-        double elementMaxX = bounds.getMaxX();
-        double elementMinY = bounds.getMinY();
-        double elementMaxY = bounds.getMaxY();
+        float elementMinX = bounds.getMinX();
+        float elementMaxX = bounds.getMaxX();
+        float elementMinY = bounds.getMinY();
+        float elementMaxY = bounds.getMaxY();
 
         if (elementMinX < boundingBox.getMinX()) {
             boundingBox.setMinX(elementMinX);

@@ -96,24 +96,48 @@ public class FXAnims {
     }
 
 
+    public static boolean isMoving = false;
     public static void translateNode(Node node, double duration, int x, int y) {
-        try {
-            TranslateTransition translateTransition = new TranslateTransition();
-            translateTransition.setNode(node);
-            translateTransition.setDuration(Duration.seconds(duration));
-            translateTransition.setCycleCount(1);
-            translateTransition.setInterpolator(Interpolator.EASE_IN);
-            if (x != 0) {
-                translateTransition.setByX(x);
+        if (!isMoving) {
+            try {
+                isMoving = true;
+                TranslateTransition translateTransition = new TranslateTransition();
+                translateTransition.setNode(node);
+                translateTransition.setDuration(Duration.seconds(duration));
+                translateTransition.setCycleCount(1);
+                translateTransition.setInterpolator(Interpolator.EASE_IN);
+                if (x != 0) {
+                    translateTransition.setByX(x);
+                }
+                if (y != 0) {
+                    translateTransition.setByY(y);
+                }
+                translateTransition.setAutoReverse(false);
+                translateTransition.setOnFinished(e -> isMoving = false);
+                translateTransition.play();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            if (y != 0) {
-                translateTransition.setByY(y);
+        }
+    }
+
+    public static boolean isRotating = false;
+    public static void rotateNode(Node node, double duration, double angleTransform) {
+        if (!isRotating) {
+            try {
+                isRotating = true;
+                RotateTransition rotateTransition = new RotateTransition();
+                rotateTransition.setNode(node);
+                rotateTransition.setDuration(Duration.seconds(duration));
+                rotateTransition.setCycleCount(1);
+                rotateTransition.setInterpolator(Interpolator.EASE_OUT);
+                rotateTransition.setAutoReverse(false);
+                rotateTransition.setByAngle(angleTransform);
+                rotateTransition.setOnFinished(e -> isRotating = false);
+                rotateTransition.play();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            translateTransition.setAutoReverse(false);
-            translateTransition.setOnFinished(e -> isCurrentlyPlaying = false);
-            translateTransition.play();
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
@@ -132,7 +156,7 @@ public class FXAnims {
                         ));
                 fadeInTimeline.setCycleCount(1);
                 fadeInTimeline.setAutoReverse(false);
-                fadeInTimeline.setOnFinished(e -> translateNode(button, 0.15, 315, 0));
+                fadeInTimeline.setOnFinished(e -> UITranslateAssist(button));
                 fadeInTimeline.play();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -154,6 +178,7 @@ public class FXAnims {
                         ));
                 fadeInTimeline.setCycleCount(1);
                 fadeInTimeline.setAutoReverse(false);
+                fadeInTimeline.setOnFinished(e -> isCurrentlyPlaying = false);
                 fadeInTimeline.play();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -161,7 +186,11 @@ public class FXAnims {
         } else {
             return;
         }
+    }
 
+    public static void UITranslateAssist(Node button) {
+        translateNode(button, 0.15, 315, 0);
+        isCurrentlyPlaying = false;
     }
 
 

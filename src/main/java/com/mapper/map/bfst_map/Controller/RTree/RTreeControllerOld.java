@@ -27,7 +27,6 @@ public class RTreeControllerOld {
     private final RTree foundationRTree;
 
     public RTreeControllerOld(List<Way> ways, List<Relation> relations, List<Road> roads) {
-
         List<HasBoundingBox> motorwayList = new ArrayList<>();
         List<HasBoundingBox> trunkList = new ArrayList<>();
         List<HasBoundingBox> primaryList = new ArrayList<>();
@@ -39,11 +38,6 @@ public class RTreeControllerOld {
         List<HasBoundingBox> buildingList = new ArrayList<>();
         List<HasBoundingBox> waterwayList = new ArrayList<>();
         List<HasBoundingBox> foundationList = new ArrayList<>();
-
-
-
-
-
 
         for (Relation relation : relations) {
             Map<String, String> tags = relation.getTags();
@@ -109,40 +103,22 @@ public class RTreeControllerOld {
     }
 
     private RTree loadRTree(List<HasBoundingBox> elements) {
-        double minX = Double.POSITIVE_INFINITY, minY = Double.POSITIVE_INFINITY;
-        double maxX = Double.NEGATIVE_INFINITY, maxY = Double.NEGATIVE_INFINITY;
+        float minX = Float.POSITIVE_INFINITY, minY = Float.POSITIVE_INFINITY;
+        float maxX = Float.NEGATIVE_INFINITY, maxY = Float.NEGATIVE_INFINITY;
 
         for (HasBoundingBox element : elements) {
             Bounds bounds = element.getBoundingBox();
 
-            double wayMinX = bounds.getMinX();
-            double wayMaxX = bounds.getMaxX();
-            double wayMinY = bounds.getMinY();
-            double wayMaxY = bounds.getMaxY();
+            float wayMinX = bounds.getMinX();
+            float wayMaxX = bounds.getMaxX();
+            float wayMinY = bounds.getMinY();
+            float wayMaxY = bounds.getMaxY();
 
             minX = Math.min(minX, wayMinX);
             minY = Math.min(minY, wayMinY);
 
             maxX = Math.max(maxX, wayMaxX);
             maxY = Math.max(maxY, wayMaxY);
-
-            //Tænker ovenstående er lidt nemmere at læse? Ellers ændres det bare tilbage.
-
-            /* if (wayMinX < minX) {
-                minX = wayMinX;
-            }
-
-            if (wayMaxX > maxX) {
-                maxX = wayMaxX;
-            }
-
-            if (wayMinY < minY) {
-                minY = wayMinY;
-            }
-
-            if (wayMaxY > maxY) {
-                maxY = wayMaxY;
-            } */
         }
 
         Bounds bounds = new Bounds(minX, maxX, minY, maxY);
@@ -153,8 +129,6 @@ public class RTreeControllerOld {
     }
 
     public void draw(GraphicsContext graphicsContext, Affine affine, Bounds bounds, double zoomLevel) {
-
-
         List<HasBoundingBox> motorwayList = motorwayRTree.boundsSearch(bounds);
         List<HasBoundingBox> trunkList = trunkRTree.boundsSearch(bounds);
         List<HasBoundingBox> primaryList = primaryRTree.boundsSearch(bounds);

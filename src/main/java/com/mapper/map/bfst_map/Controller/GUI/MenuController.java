@@ -34,7 +34,7 @@ public class MenuController {
     }
 
     public void loadDenmarkOSM() {
-        loadMap("data/denmark-latest.osm");
+        loadMap("data/bornholm.osm");
     }
 
     public void loadCustomOSM() {
@@ -81,7 +81,7 @@ public class MenuController {
     public void initButtonText() {
         loadButton1.setText("Load Small.OSM");
         loadButton2.setText("Load Kbh.OSM");
-        loadButton3.setText("Load Denmark.OSM");
+        loadButton3.setText("Load Bornholm.OSM");
     }
 
     public void setPrimaryStage(Stage stage) {

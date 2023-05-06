@@ -2,6 +2,7 @@ package com.mapper.map.bfst_map.Controller.RTree;
 
 import com.mapper.map.bfst_map.Controller.GUI.DrawController;
 import com.mapper.map.bfst_map.Model.Dijkstra.Road;
+import com.mapper.map.bfst_map.Model.Elements.Model;
 import com.mapper.map.bfst_map.Model.Elements.Relation;
 import com.mapper.map.bfst_map.Model.Elements.Way;
 import com.mapper.map.bfst_map.Model.Elements.Waypoint;
@@ -14,25 +15,24 @@ import javafx.scene.transform.Affine;
 import java.util.*;
 
 public class RTreeController {
-
     private HashMap<String, List<HasBoundingBox>> typeListMap = new HashMap<>();
     private HashMap<String, RTree> typeTreeMap = new HashMap<>();
 
-    public RTreeController(List<Way> ways, List<Relation> relations, List<Road> roads) {
 
-        //Helper method til at putte keywords in, dette kan forbedres ved at binde "keytypes" til objektet i sig selv.
+    public RTreeController(List<Way> ways, List<Relation> relations, List<Road> roads) {
+        //Helper method til at putte keywords ind, dette kan forbedres ved at binde "keytypes" til objektet i sig selv.
         putMultiple(typeListMap, "motorway, trunk, primary, secondary, tertiary, highway, landuse, natural, building, waterway, foundation");
 
-
         //Stadig kodeduplikering her. Fikses ved at binde typer der bestemmer drawing order med objekter i en global map eller lign.
-
-
         for (Relation relation : relations) {
-            sorterThingie(relation);
+            if (relation.containsTag("Bornholmas")) {
+                System.out.println();
+            }
+            sortWaypoint(relation);
         }
 
         for (Way way : ways) {
-            sorterThingie(way);
+            sortWaypoint(way);
         }
 
         for (Road road : roads) {
@@ -52,16 +52,16 @@ public class RTreeController {
     }
 
     private RTree loadRTree(List<HasBoundingBox> elements) {
-        double minX = Double.POSITIVE_INFINITY, minY = Double.POSITIVE_INFINITY;
-        double maxX = Double.NEGATIVE_INFINITY, maxY = Double.NEGATIVE_INFINITY;
+        float minX = Float.POSITIVE_INFINITY, minY = Float.POSITIVE_INFINITY;
+        float maxX = Float.NEGATIVE_INFINITY, maxY = Float.NEGATIVE_INFINITY;
 
         for (HasBoundingBox element : elements) {
             Bounds bounds = element.getBoundingBox();
 
-            double wayMinX = bounds.getMinX();
-            double wayMaxX = bounds.getMaxX();
-            double wayMinY = bounds.getMinY();
-            double wayMaxY = bounds.getMaxY();
+            float wayMinX = bounds.getMinX();
+            float wayMaxX = bounds.getMaxX();
+            float wayMinY = bounds.getMinY();
+            float wayMaxY = bounds.getMaxY();
 
             minX = Math.min(minX, wayMinX);
             minY = Math.min(minY, wayMinY);
@@ -79,31 +79,69 @@ public class RTreeController {
 
     //Draw burde nok omskrives til ikke at behøve gc som param.
     public void draw(GraphicsContext graphicsContext, Affine affine, Bounds bounds, double zoomLevel) {
-
         //Lister der kan itereres igennem for drawing order. Dette flyttes til draw controller soonTM
-        List<String> elementsOrder = List.of("foundation", "waterway", "landuse", "natural", "building", "highway");
-        List<String> roadOrder = List.of("tertiary", "secondary", "primary", "trunk", "motorway");
-
+        List<String> elementsOrder = List.of("foundation", "waterway", "landuse", "natural", "building");
+        List<String> roadOrder = List.of("highway", "tertiary", "secondary", "primary", "trunk", "motorway");
 
         //Opdaterer lister
         for (String key : typeTreeMap.keySet()) {
             typeListMap.put(key, typeTreeMap.get(key).boundsSearch(bounds));
         }
 
-
         //Opdaterer GC udenfor loopet da samme indstillinger bruges for alle de generiske elementer, men dette ville nok ikke betyde det store, selvom det var i loopet
         DrawController.updateGC(affine, "element");
+        zoomLevel = Math.sqrt(zoomLevel);
 
         //Nested loop, ja, men første loop gennemgår kun string types, så det er ikke specielt intensivt.
         for (String type : elementsOrder) {
+
+            switch (type) {
+                case "building":
+                {
+                    if (zoomLevel < 40000) {
+                        continue;
+                    }
+                }
+                case "natural":
+                {
+                    if (zoomLevel < 5000) {
+                        continue;
+                    }
+                }
+            }
+
+
+
             for (HasBoundingBox element : typeListMap.get(type)) {
                 element.draw(graphicsContext);
             }
         }
 
-
         //Same here
         for (String type : roadOrder) {
+            switch (type) {
+                case "highway" -> {
+                    if (zoomLevel < 40000) {
+                        continue;
+                    }
+                }
+                case "tertiary" -> {
+                    if (zoomLevel < 10000) {
+                        continue;
+                    }
+                }
+                case "secondary" -> {
+                    if (zoomLevel < 5000) {
+                        continue;
+                    }
+                }
+                case "primary" -> {
+                    if (zoomLevel < 2500) {
+                        continue;
+                    }
+                }
+            }
+
             DrawController.updateGC(affine, type);
             for (HasBoundingBox road : typeListMap.get(type)) {
                 road.draw(graphicsContext);
@@ -112,7 +150,7 @@ public class RTreeController {
     }
 
     //Helper methods fordi jeg er doven
-    private void sorterThingie(Waypoint waypoint) {
+    private void sortWaypoint(Waypoint waypoint) {
         if (waypoint.containsTag("landuse")) {
             typeListMap.get("landuse").add((HasBoundingBox) waypoint);
         } else if (waypoint.containsTag("building")) {
@@ -136,5 +174,9 @@ public class RTreeController {
         for (String type : map.keySet()) {
             typeTreeMap.put(type, loadRTree(typeListMap.get(type)));
         }
+    }
+
+    private Road getClosestRoad(Bounds bounds) {
+        throw new UnsupportedOperationException();
     }
 }

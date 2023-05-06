@@ -17,20 +17,18 @@ public class Utilities {
     }
 
     public static double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
-        //Haversine formula, return value is in kilometers
-        //0.5% margin of error, no there isnt a more precise way.
+        double latDistance = Math.toRadians(lat2 - lat1);
+        double lonDistance = Math.toRadians(lon2 - lon1);
 
+        lat1 = Math.toRadians(lat1);
+        lat2 = Math.toRadians(lat2);
+
+        double calculation = Math.pow(Math.sin(latDistance / 2), 2) + Math.pow(Math.sin(lonDistance / 2), 2) * Math.cos(lat1) * Math.cos(lat2);
 
         double r = 6371;
-        double latDist = Math.toRadians(lat1 - lat2);
-        double lonDist = Math.toRadians(lon1 - lon2);
+        double distance = 2 * Math.asin(Math.sqrt(calculation));
 
-        double calc = Math.sin(latDist / 2) * Math.sin(latDist / 2) + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) * Math.sin(lonDist / 2) * Math.sin(lonDist / 2);
-        double dist = r * (2 * Math.atan2(Math.sqrt(calc), Math.sqrt(calc - 1)));
-
-
-
-        return dist;
+        return r * distance;
     }
 
     public float[] calcCenter(float[] coords) {
@@ -87,13 +85,6 @@ public class Utilities {
         return new float[]{(x1 + x2) / 2, (y1 + y2) / 2};
     }
 
-
-
-
-
-
-
-
     //Generic getters(to be removed later, implemented in Waypoint class)
     public static String getCountry(Waypoint waypoint) {
         if (waypoint.containsTag("addr:country")) {
@@ -134,8 +125,4 @@ public class Utilities {
             throw new NoSuchElementException("Given element has no assigned postcode");
         }
     }
-
-
-
-
 }

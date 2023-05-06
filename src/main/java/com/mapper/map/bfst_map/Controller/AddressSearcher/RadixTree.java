@@ -146,16 +146,6 @@ public class RadixTree<Value> {
         return get(key) != null;
     }
 
-    public Iterable<String> keys(int amount) {
-        if (amount <= 0) {
-            amount = Integer.MAX_VALUE;
-        }
-
-        LinkedQueue<String> queue = new LinkedQueue<>();
-        collect(root, new StringBuilder(), queue, amount);
-        return queue;
-    }
-
     public Iterable<String> keysWithPrefix(String prefix, int amount) {
         if (prefix == null) {
             throw new IllegalArgumentException("Calling keysWithPrefix(String prefix) with null string.");
@@ -176,7 +166,33 @@ public class RadixTree<Value> {
         }
 
         if (get(root, 0, prefix) == null) {
-            //collect(node, new StringBuilder(prefix), queue, amount);
+            String newPrefix = prefix.substring(0, prefix.length() - 1);
+
+            for (int i = prefix.length(); i >= 0; i--) {
+                newPrefix = prefix.substring(0, i);
+
+                if (get(root, 0, newPrefix) != null) {
+                    break;
+                }
+            }
+
+            char currentCharacter = prefix.charAt(newPrefix.length());
+            String currentString = prefix.substring(newPrefix.length());
+            RadixTreeNode<Value> nextNode = node.getNextNode(currentCharacter);
+
+            if (nextNode == null) {
+                return queue;
+            }
+
+            String label = nextNode.getLabel();
+            int length = Math.min(label.length(), currentString.length());
+
+            if (!currentString.substring(0, length).equals(label.substring(0, length))) {
+                return queue;
+            }
+
+
+            collect(nextNode, new StringBuilder(newPrefix + nextNode.getLabel()), queue, amount);
         } else {
             collect(node, new StringBuilder(prefix), queue, amount);
         }

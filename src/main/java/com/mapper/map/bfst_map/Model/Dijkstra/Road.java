@@ -5,6 +5,7 @@ import com.mapper.map.bfst_map.Model.Elements.Waypoint;
 import com.mapper.map.bfst_map.Model.RTree.Bounds;
 import com.mapper.map.bfst_map.Model.RTree.HasBoundingBox;
 import com.mapper.map.bfst_map.Utils.Highway;
+import com.mapper.map.bfst_map.Utils.Utilities;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.util.HashSet;
@@ -15,9 +16,8 @@ import java.util.Set;
 public class Road extends Waypoint implements IEdge, HasBoundingBox {
     private final int from;
     private final int to;
-    private int speed;
-    private double distance;
-    private double weight;
+    private float distance;
+    private float weight;
     private Bounds boundingBox;
     private Set<String> types;
     private final float[] coordinates;
@@ -103,11 +103,12 @@ public class Road extends Waypoint implements IEdge, HasBoundingBox {
             float x2 = coordinates[i];
             float y2 = coordinates[i + 1];
 
-            distance += Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+            distance += Utilities.haversineDistance(-y1, x1 / 0.56, -y2, x2 / 0.56);
         }
 
         //Get speed
         String maxspeed = tags.get("maxspeed");
+        int speed;
         if (maxspeed == null) {
             if (highway == null) {
                 speed = 50;
@@ -120,36 +121,23 @@ public class Road extends Waypoint implements IEdge, HasBoundingBox {
 
         // Get weight
         if (speed == 0) {
-            weight = Double.POSITIVE_INFINITY;
+            weight = Float.POSITIVE_INFINITY;
         } else {
             weight = distance / speed;
         }
 
-        //Find bounds
-        double minX = Double.POSITIVE_INFINITY;
-        double maxX = Double.NEGATIVE_INFINITY;
-        double minY = Double.POSITIVE_INFINITY;
-        double maxY = Double.NEGATIVE_INFINITY;
+        float minX = Float.POSITIVE_INFINITY, minY = Float.POSITIVE_INFINITY;
+        float maxX = Float.NEGATIVE_INFINITY, maxY = Float.NEGATIVE_INFINITY;
 
         for (int i = 0; i < coordinates.length; i += 2) {
-            double x = coordinates[i];
-            double y = coordinates[i + 1];
+            float x = coordinates[i];
+            float y = coordinates[i + 1];
 
-            if (x < minX) {
-                minX = x;
-            }
+            minX = Math.min(minX, x);
+            minY = Math.min(minY, y);
 
-            if (x > maxX) {
-                maxX = x;
-            }
-
-            if (y < minY) {
-                minY = y;
-            }
-
-            if (y > maxY) {
-                maxY = y;
-            }
+            maxX = Math.max(maxX, x);
+            maxY = Math.max(maxY, y);
         }
 
         boundingBox = new Bounds(minX, maxX, minY, maxY);
@@ -163,11 +151,6 @@ public class Road extends Waypoint implements IEdge, HasBoundingBox {
     @Override
     public int getTo() {
         return to;
-    }
-
-    @Override
-    public int getSpeed() {
-        return speed;
     }
 
     @Override
@@ -199,6 +182,11 @@ public class Road extends Waypoint implements IEdge, HasBoundingBox {
         }
 
         throw new IllegalArgumentException("Calling getWeight(String type) with invalid string.");
+    }
+
+    @Override
+    public float[] getCoordinates() {
+        return coordinates;
     }
 
     @Override
